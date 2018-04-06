@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>LRIC</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Sitewide Styles -->
+		<link href="../../../assets/css/styles.css" rel="stylesheet">
+	</head>
+	<body class="flex flex-col min-h-full">
+
+		<div class="flex-1">
+			{{ block "main" . }}{{ end }}
+		</div>
+
+		{{ partial "footer" . }}
+	</body>
+</html>
