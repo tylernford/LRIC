@@ -9,12 +9,14 @@
         <!-- Sitewide Styles -->
 		<link href="../../../assets/css/styles.css" rel="stylesheet">
 	</head>
-	<body class="flex flex-col min-h-full">
+	<body class="flex flex-col font-sans min-h-full">
 
 		<div class="flex-1">
+			{{ partial "site_header" . }}
+			
 			{{ block "main" . }}{{ end }}
 		</div>
 
-		{{ partial "footer" . }}
+		{{ partial "site_footer" . }}
 	</body>
 </html>

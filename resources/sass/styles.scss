@@ -2,6 +2,18 @@
 // LRIC
 //
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+	body {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
+a {
+  -webkit-transition: color 150ms ease-in-out, background 150ms ease-in-out;
+  transition: color 150ms ease-in-out, background 150ms ease-in-out;
+}
+
 @tailwind preflight;
 @tailwind utilities;
 @tailwind screens;
