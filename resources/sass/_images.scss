@@ -1,0 +1,57 @@
+//
+// Images
+//
+.img {
+	@apply .block .relative;
+	img {
+		@apply .block .h-auto .w-full;
+	}
+
+	// Ratio
+  &.is1by1,
+  &.is5by3,
+  // &.is3by2,
+  &.is16by9,
+  // &.is2by1
+  &.is552by716
+  {
+    overflow: hidden;
+    
+    img {
+    	@apply .h-full .w-full .pin-t .pin-l;
+		object-fit: cover;
+    }
+  }
+
+  &.is5by3 {
+	  padding-top: 60%
+  }
+  &.is1by1 {
+    padding-top: 100%
+  }
+  &.is4by3 {
+    padding-top: 75%
+  }
+  &.is3by2 {
+    padding-top: 66.6666%
+  }
+  &.is16by9 {
+    padding-top: 56.25%
+  }
+  &.is2by1 {
+    padding-top: 50%
+  }
+  &.is552by716 {
+	  padding-top: 129.71014493%
+	//padding-top: 77.09497207%
+  }
+}
+
+
+@media (min-width: 768px) {
+	.img {
+		&.md\:is520by460 {
+		  padding-top: 88.46153846%
+	  	}
+	}
+}
