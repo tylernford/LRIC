@@ -7,7 +7,8 @@ mix.setPublicPath('./');
 mix
 	.sass('resources/sass/styles.scss', 'static/assets/css/styles.css')
 	//.js('resources/assets/js/app.js', 'public/assets/js/app.js')
-	//.copyDirectory('resources/assets/fonts', 'public/assets/fonts')
+	.copyDirectory('resources/fonts', 'static/assets/fonts')
+	.copyDirectory('resources/img', 'static/assets/img')
 	.version()
 	.options({
 		processCssUrls: false,

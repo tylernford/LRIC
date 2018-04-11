@@ -1,0 +1,31 @@
+$Gibson: '../fonts/Gibson/Gibson';
+$Lora: '../fonts/Lora/Lora';
+
+@font-face {
+ font-family: "Gibson";
+ font-weight: 400;
+ src: url("#{$Gibson}-Regular.woff2") format("woff2"),
+      url("#{$Gibson}-Regular.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Gibson";
+ font-weight: 500;
+ src: url("#{$Gibson}-SemiBold.woff2") format("woff2"),
+      url("#{$Gibson}-SemiBold.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Lora";
+ font-weight: 400;
+ src: url("#{$Lora}-Regular.woff2") format("woff2"),
+      url("#{$Lora}-Regular.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Lora";
+ font-weight: 400;
+ font-style: italic;
+ src: url("#{$Lora}-Italic.woff2") format("woff2"),
+      url("#{$Lora}-Italic.woff") format("woff");
+}

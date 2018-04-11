@@ -5,15 +5,87 @@
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
 	body {
 		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
+		-webkit-font-smoothing: antialiased
 	}
 }
 
 a {
-  -webkit-transition: color 150ms ease-in-out, background 150ms ease-in-out;
-  transition: color 150ms ease-in-out, background 150ms ease-in-out;
+  transition: color 150ms ease-in-out, background 150ms ease-in-out
 }
 
+.element-invisible {
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px)
+}
+
+.svg-headline-one {
+	margin: 0 auto;
+	height: auto;
+	width: 100%;
+	max-width: 48.8125rem
+}
+
+.svg-headline-two {
+	margin: 0 auto;
+	height: auto;
+	width: 100%;
+	max-width: 25rem
+}
+
+.translate_-l-3_t-3 { transform: translate(-.75rem, .75rem) }
+@media (min-width: 576px) {
+	.sm\:translate_-l-4_t-4 { transform: translate(-1rem, 1rem) }
+}
+@media (min-width: 768px) {
+	.md\:translate_-l-4_t-4 { transform: translate(-1rem, 1rem) }
+}
+
+@import 'fonts';
+@import 'text-crop';
+@import 'images';
+
+.btn {
+	@apply .font-medium .inline-block .no-underline .px-9 .text-center .text-2xs .uppercase
+}
+
+// Grow
+//
+.grow-old { 
+    backface-visibility: hidden; 
+    transform: translateZ( 0 );
+    transition: transform .25s ease-out
+}
+.grow-old:hover { transform: scale( 1.05 );transition: transform .25s ease-in }
+
+.grow-old:hover .grow-old:focus { transform: none }
+.grow {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden; 
+	-webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
+.grow:hover, .grow:focus { -webkit-transform: scale( 1.05 ); transform: scale( 1.05 ); }
+.grow:active { -webkit-transform: scale( .90 ); transform: scale( .90 ); }
 @tailwind preflight;
 @tailwind utilities;
 @tailwind screens;
+
+
+
+
+
+
+
+/* OPPORTUNITY ROOTED I: */
+//background-image: linear-gradient(90deg, #FFDB8F 1%, #EDC879 14%, #EDC879 26%, #E0AB65 52%, #EDBC77 67%, #E3B66D 84%, #E0B370 100%);
+
+.heading-gradient {
+	background:    linear-gradient(-90deg, #FFDB8F 1%, #EDC879 14%, #EDC879 26%, #E0AB65 52%, #EDBC77 67%, #E3B66D 84%, #E0B370 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	&.--one {
+		max-width:22.22222222222222em
+	}
+}
