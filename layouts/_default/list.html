@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+{{ range where .Data.Pages "Title" "Home"}}
+
     <main style="background: url('../../../assets/img/marble.jpg') no-repeat center top; background-size: 100% auto;">
         
         <!--   Section One   --> 
@@ -148,4 +150,5 @@
         <!-- End Section Three -->
     </main>
         
+{{ end }}
 {{ end }}
