@@ -1,0 +1,110 @@
+{{ define "main" }}
+
+    <main>
+        
+        <!--   Section One   --> 
+        <section class="m-auto max-w-3xl pt-12 px-4   sm:px-6   md:px-8">
+            <!--   Headline   -->
+            <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">{{ .Title }}</h2>
+            <h3 class="heading-gradient   font-semibold leading-tight m-auto max-w-md mb-17 text-xl text-center text-yellow-dark uppercase   xs:text-2xl   sm:text-3xl   md:px-4 md:text-4xl   lg:px-0">Brief heading about the company, partners, and/or experience</h3>
+            <!-- End Headline -->
+        
+        
+            <!--   Text Left/Fancy Photo Right   -->
+            <div class="md:flex md:flex-row-reverse md:justify-between  mb-24   lg:mb-43">
+                <div class="border border-yellow-light mb-12 ml-3 self-start   sm:mb-0 sm:ml-35p sm:w-3/5   md:ml-0 md:w-2/5   lfg:w-1/2">
+                    <figure class="img is5by3   translate_-l-3_t-3 w-full   md:translate_-l-4_t-4   md:is520by460">
+                        <img class="block w-full   absolute pin-t pin-l" src="../../../assets/img/placeholder_1.jpg">
+                    </figure>
+                </div>
+                
+                <div class="sm:w-9/10 sm:m-auto   md:pl-4 md:pr-24 md:w-3/5   lg:pl-10 lfg:w-1/2   xl:pl-24">
+                    <h3 class="font-semibold leading-none mb-5 text-sm tracking-normal uppercase   sm:mb-10 sm:-mt-4 sm:pr-5 sm:w-1/3   md:mb-5 md:mt-8 md:w-full   lg:-mt-19">About</h3>
+                    <p class="font-serif leading-loose text-grey text-base   xl:text-lg">Donec tempus lorem at ante feugiat, sit amet interdum mi rutrum. Morbi ultrices enim sit amet urna ultrices vestibulum. Aliquam finibus fermentum enim, non porta arcu suscipit ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam nec nisi non lectus condimentum consequat eu ut enim. Duis tincidunt pharetra nibh sed vulputate.</p>
+                </div>
+            </div>
+            <!-- End Text Left/Fancy Photo Right -->
+            
+            <!--   Founder Grid   -->
+            <div class="flex flex-wrap justify-center mb-4 sm:-mx-2   md:-mx-4">
+                <!--   Founder   -->
+                {{ partial "founder_grid_item" . }}
+                {{ partial "founder_grid_item" . }}
+                {{ partial "founder_grid_item" . }}
+                <!-- End Founder -->
+            </div>
+            <!-- End Founder Grid -->
+        </section>
+        <!-- End Section One -->
+        
+        
+        <!--   Section Two   -->
+        <section class="bg-yellow-lightest mb-23">
+            <div class="m-auto max-w-2xl">
+                <!--   Info Grid   -->
+                    <div class="flex flex-wrap items-start px-3 py-10   md:px-4   lg:py-15">
+
+                        <!--   Info Item   -->
+                        <p class="flex flex-col-reverse text-center py-4 w-full   sm:py-6 sm:w-1/2   px-5 md:w-1/3">
+                            <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase">Founded</span>
+                            <span class="font-serif leading-tight mb-1 text-3xl text-yellow   sm:text-5xl   lg:text-6xl">2005</span>
+                        </p>
+                        <!-- End Info Item -->
+                        
+                        <!--   Info Item   -->
+                        <p class="flex flex-col-reverse text-center py-4 w-full   sm:py-6 sm:w-1/2   px-5 md:w-1/3">
+                            <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase">Combined Partner Experience</span>
+                            <span class="font-serif leading-tight mb-1 text-3xl text-yellow   sm:text-5xl   lg:text-6xl">140+ yrs</span>
+                        </p>
+                        <!-- End Info Item -->
+                        
+                        <!--   Info Item   -->
+                        <p class="flex flex-col-reverse text-center py-4 w-full   sm:py-6 sm:w-1/2   px-5 md:w-1/3">
+                            <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase">Partners 3</span>
+                            <span class="font-serif leading-tight mb-1 text-3xl text-yellow   sm:text-5xl   lg:text-6xl">3</span>
+                        </p>
+                        <!-- End Info Item -->
+                        
+                        <!--   Info Item   -->
+                        <p class="flex flex-col-reverse text-center py-4 w-full   sm:py-6 sm:w-1/2   px-5 md:w-1/3">
+                            <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase">Avg Occupancy</span>
+                            <span class="font-serif leading-tight mb-1 text-3xl text-yellow   sm:text-5xl   lg:text-6xl">92%</span>
+                        </p>
+                        <!-- End Info Item -->
+                        
+                        <!--   Info Item   -->
+                        <p class="flex flex-col-reverse text-center py-4 w-full   sm:py-6 sm:w-1/2   px-5 md:w-1/3">
+                            <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase">Retail SQFT Developed</span>
+                            <span class="font-serif leading-tight mb-1 text-3xl text-yellow   sm:text-5xl   lg:text-6xl">42<i>mil</i></span>
+                        </p>
+                        <!-- End Info Item -->
+                        
+                        <!--   Info Item   -->
+                        <p class="flex flex-col-reverse text-center py-4 w-full   sm:py-6 sm:w-1/2   px-5 md:w-1/3">
+                            <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase">Closed Real Estate Debt</span>
+                            <span class="font-serif leading-tight mb-1 text-3xl text-yellow   sm:text-5xl   lg:text-6xl">$2<i>bil</i></span>
+                        </p>
+                        <!-- End Info Item -->
+                        
+                    </div>
+                <!-- End Info Grid -->
+            </div>
+        </section>
+        <!-- End Section Two -->
+        
+
+        <!--   Section Three   -->
+        <section class="m-auto max-w-xl pb-14 px-4   sm:px-6   md:pb-20 md:px-20   lg:px-16   xl:pb-35">
+            <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">Is “Retail Is Dying”?</h2>
+            <p class="font-serif leading-normal mb-9 text-base text-grey-dark   xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec purus vel lorem lacinia feugiat. Aenean enim quam, tincidunt congue sapien eu, efficitur porta mauris. Cras ac mauris arcu. Pellentesque imperdiet condimentum hendrerit. Nullam pretium pulvinar ligula non porttitor. Vestibulum vel tortor vel purus malesuada iaculis. Phasellus at facilisis elit. Curabitur id est ac lacus molestie ullamcorper. Ut finibus est non odio lacinia pretium. Proin ut porta tellus, at pretium ante. Praesent vitae quam ipsum. Quisque rhoncus malesuada arcu, sit amet blandit nisi scelerisque sit amet.<p>
+            <figure class="img is3by2   sm:is2by1   mb-13">
+                <img class="block w-full   absolute pin-t pin-l" src="../../../assets/img/placeholder_1.jpg">
+            </figure>
+            
+            <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">Opportunities in Texas</h2>
+            <p class="font-serif leading-normal mb-9 text-base text-grey-dark   xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec purus vel lorem lacinia feugiat. Aenean enim quam, tincidunt congue sapien eu, efficitur porta mauris. Cras ac mauris arcu. Pellentesque imperdiet condimentum hendrerit. Nullam pretium pulvinar ligula non porttitor. Vestibulum vel tortor vel purus malesuada iaculis. Phasellus at facilisis elit. Curabitur id est ac lacus molestie ullamcorper. Ut finibus est non odio lacinia pretium. Proin ut porta tellus, at pretium ante. Praesent vitae quam ipsum. Quisque rhoncus malesuada arcu, sit amet blandit nisi scelerisque sit amet.<p>
+        </section>
+        <!-- End Section Three -->
+    </main>
+        
+{{ end }}

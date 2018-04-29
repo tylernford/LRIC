@@ -10,9 +10,10 @@
 	// Ratio
   &.is1by1,
   &.is5by3,
-  // &.is3by2,
+  &.is3by2,
+  &.is4by3,
   &.is16by9,
-  // &.is2by1
+  &.is2by1,
   &.is552by716
   {
     overflow: hidden;
@@ -48,10 +49,27 @@
 }
 
 
+@media (min-width: 576px) {
+	.img {
+		&.sm\:is1by1 {
+		  padding-top: 100%
+	  	}
+		&.sm\:is2by1 {
+	      padding-top: 50%
+	    }
+		&.sm\:is4by3 {
+	      padding-top: 75%
+	    }
+	}
+}
+
 @media (min-width: 768px) {
 	.img {
 		&.md\:is520by460 {
 		  padding-top: 88.46153846%
 	  	}
+		&.md\:is3by2 {
+	      padding-top: 66.6666%
+	    }
 	}
 }
