@@ -47,7 +47,16 @@ a {
 @import 'images';
 
 .btn {
-	@apply .font-medium .inline-block .no-underline .px-9 .text-center .text-2xs .uppercase
+	@apply .font-semibold .inline-block .leading-none .no-underline .text-center .tracking-thin .uppercase;
+	
+	&.--small {
+		@apply .h-10 .px-9 .text-2xs;
+		padding-top: .9375rem;
+	}
+	&.--medium {
+		@apply .h-10 .px-9 .text-1xs;
+		padding-top: 13.5px;
+	}
 }
 
 // Grow
@@ -73,8 +82,11 @@ a {
 
 
 
-
-
+.test-link-style:hover::after {
+	content: '→';
+	font-family:'Lucida Grande';
+	margin-left: .25rem
+}
 
 
 /* OPPORTUNITY ROOTED I: */
