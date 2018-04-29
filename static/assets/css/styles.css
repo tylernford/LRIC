@@ -60,7 +60,7 @@ a {
 
 @font-face {
   font-family: "Gibson";
-  font-weight: 500;
+  font-weight: 600;
   src: url("../fonts/Gibson/Gibson-SemiBold.woff2") format("woff2"), url("../fonts/Gibson/Gibson-SemiBold.woff") format("woff");
 }
 
@@ -123,14 +123,20 @@ a {
 
 .img.is1by1,
 .img.is5by3,
+.img.is3by2,
+.img.is4by3,
 .img.is16by9,
+.img.is2by1,
 .img.is552by716 {
   overflow: hidden;
 }
 
 .img.is1by1 img,
 .img.is5by3 img,
+.img.is3by2 img,
+.img.is4by3 img,
 .img.is16by9 img,
+.img.is2by1 img,
 .img.is552by716 img {
   height: 100%;
   width: 100%;
@@ -168,9 +174,27 @@ a {
   padding-top: 129.71014493%;
 }
 
+@media (min-width: 576px) {
+  .img.sm\:is1by1 {
+    padding-top: 100%;
+  }
+
+  .img.sm\:is2by1 {
+    padding-top: 50%;
+  }
+
+  .img.sm\:is4by3 {
+    padding-top: 75%;
+  }
+}
+
 @media (min-width: 768px) {
   .img.md\:is520by460 {
     padding-top: 88.46153846%;
+  }
+
+  .img.md\:is3by2 {
+    padding-top: 66.6666%;
   }
 }
 
@@ -2090,6 +2114,10 @@ button,
   margin: 3rem;
 }
 
+.m-13 {
+  margin: 3.25rem;
+}
+
 .m-15 {
   margin: 3.75rem;
 }
@@ -2110,12 +2138,24 @@ button,
   margin: 5rem;
 }
 
+.m-22 {
+  margin: 5.5rem;
+}
+
+.m-23 {
+  margin: 5.75rem;
+}
+
 .m-24 {
   margin: 6rem;
 }
 
 .m-28 {
   margin: 7rem;
+}
+
+.m-43 {
+  margin: 10.75rem;
 }
 
 .m-auto {
@@ -2248,6 +2288,16 @@ button,
   margin-right: 3rem;
 }
 
+.my-13 {
+  margin-top: 3.25rem;
+  margin-bottom: 3.25rem;
+}
+
+.mx-13 {
+  margin-left: 3.25rem;
+  margin-right: 3.25rem;
+}
+
 .my-15 {
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
@@ -2298,6 +2348,26 @@ button,
   margin-right: 5rem;
 }
 
+.my-22 {
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
+}
+
+.mx-22 {
+  margin-left: 5.5rem;
+  margin-right: 5.5rem;
+}
+
+.my-23 {
+  margin-top: 5.75rem;
+  margin-bottom: 5.75rem;
+}
+
+.mx-23 {
+  margin-left: 5.75rem;
+  margin-right: 5.75rem;
+}
+
 .my-24 {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -2316,6 +2386,16 @@ button,
 .mx-28 {
   margin-left: 7rem;
   margin-right: 7rem;
+}
+
+.my-43 {
+  margin-top: 10.75rem;
+  margin-bottom: 10.75rem;
+}
+
+.mx-43 {
+  margin-left: 10.75rem;
+  margin-right: 10.75rem;
 }
 
 .my-auto {
@@ -2544,6 +2624,22 @@ button,
   margin-left: 3rem;
 }
 
+.mt-13 {
+  margin-top: 3.25rem;
+}
+
+.mr-13 {
+  margin-right: 3.25rem;
+}
+
+.mb-13 {
+  margin-bottom: 3.25rem;
+}
+
+.ml-13 {
+  margin-left: 3.25rem;
+}
+
 .mt-15 {
   margin-top: 3.75rem;
 }
@@ -2624,6 +2720,38 @@ button,
   margin-left: 5rem;
 }
 
+.mt-22 {
+  margin-top: 5.5rem;
+}
+
+.mr-22 {
+  margin-right: 5.5rem;
+}
+
+.mb-22 {
+  margin-bottom: 5.5rem;
+}
+
+.ml-22 {
+  margin-left: 5.5rem;
+}
+
+.mt-23 {
+  margin-top: 5.75rem;
+}
+
+.mr-23 {
+  margin-right: 5.75rem;
+}
+
+.mb-23 {
+  margin-bottom: 5.75rem;
+}
+
+.ml-23 {
+  margin-left: 5.75rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -2654,6 +2782,22 @@ button,
 
 .ml-28 {
   margin-left: 7rem;
+}
+
+.mt-43 {
+  margin-top: 10.75rem;
+}
+
+.mr-43 {
+  margin-right: 10.75rem;
+}
+
+.mb-43 {
+  margin-bottom: 10.75rem;
+}
+
+.ml-43 {
+  margin-left: 10.75rem;
 }
 
 .mt-auto {
@@ -2757,7 +2901,7 @@ button,
 }
 
 .max-w-md {
-  max-width: 45rem;
+  max-width: 48rem;
 }
 
 .max-w-lg {
@@ -2773,7 +2917,7 @@ button,
 }
 
 .max-w-3xl {
-  max-width: 80rem;
+  max-width: 74rem;
 }
 
 .max-w-4xl {
@@ -2838,6 +2982,10 @@ button,
 
 .-m-19 {
   margin: -4.75rem;
+}
+
+.-m-25 {
+  margin: -6.25rem;
 }
 
 .-m-px {
@@ -2922,6 +3070,16 @@ button,
 .-mx-19 {
   margin-left: -4.75rem;
   margin-right: -4.75rem;
+}
+
+.-my-25 {
+  margin-top: -6.25rem;
+  margin-bottom: -6.25rem;
+}
+
+.-mx-25 {
+  margin-left: -6.25rem;
+  margin-right: -6.25rem;
 }
 
 .-my-px {
@@ -3062,6 +3220,22 @@ button,
   margin-left: -4.75rem;
 }
 
+.-mt-25 {
+  margin-top: -6.25rem;
+}
+
+.-mr-25 {
+  margin-right: -6.25rem;
+}
+
+.-mb-25 {
+  margin-bottom: -6.25rem;
+}
+
+.-ml-25 {
+  margin-left: -6.25rem;
+}
+
 .-mt-px {
   margin-top: -1px;
 }
@@ -3160,6 +3334,10 @@ button,
   padding: 1.5rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .p-8 {
   padding: 2rem;
 }
@@ -3188,6 +3366,18 @@ button,
   padding: 3.5rem;
 }
 
+.p-15 {
+  padding: 3.75rem;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.p-19 {
+  padding: 4.75rem;
+}
+
 .p-20 {
   padding: 5rem;
 }
@@ -3200,8 +3390,20 @@ button,
   padding: 6rem;
 }
 
+.p-25 {
+  padding: 6.25rem;
+}
+
 .p-28 {
   padding: 7rem;
+}
+
+.p-29 {
+  padding: 7.25rem;
+}
+
+.p-35 {
+  padding: 8.75rem;
 }
 
 .p-px {
@@ -3278,6 +3480,16 @@ button,
   padding-right: 1.5rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -3348,6 +3560,36 @@ button,
   padding-right: 3.5rem;
 }
 
+.py-15 {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+
+.px-15 {
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-19 {
+  padding-top: 4.75rem;
+  padding-bottom: 4.75rem;
+}
+
+.px-19 {
+  padding-left: 4.75rem;
+  padding-right: 4.75rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -3378,6 +3620,16 @@ button,
   padding-right: 6rem;
 }
 
+.py-25 {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.px-25 {
+  padding-left: 6.25rem;
+  padding-right: 6.25rem;
+}
+
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -3386,6 +3638,26 @@ button,
 .px-28 {
   padding-left: 7rem;
   padding-right: 7rem;
+}
+
+.py-29 {
+  padding-top: 7.25rem;
+  padding-bottom: 7.25rem;
+}
+
+.px-29 {
+  padding-left: 7.25rem;
+  padding-right: 7.25rem;
+}
+
+.py-35 {
+  padding-top: 8.75rem;
+  padding-bottom: 8.75rem;
+}
+
+.px-35 {
+  padding-left: 8.75rem;
+  padding-right: 8.75rem;
 }
 
 .py-px {
@@ -3510,6 +3782,22 @@ button,
   padding-left: 1.5rem;
 }
 
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -3622,6 +3910,54 @@ button,
   padding-left: 3.5rem;
 }
 
+.pt-15 {
+  padding-top: 3.75rem;
+}
+
+.pr-15 {
+  padding-right: 3.75rem;
+}
+
+.pb-15 {
+  padding-bottom: 3.75rem;
+}
+
+.pl-15 {
+  padding-left: 3.75rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.pt-19 {
+  padding-top: 4.75rem;
+}
+
+.pr-19 {
+  padding-right: 4.75rem;
+}
+
+.pb-19 {
+  padding-bottom: 4.75rem;
+}
+
+.pl-19 {
+  padding-left: 4.75rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -3670,6 +4006,22 @@ button,
   padding-left: 6rem;
 }
 
+.pt-25 {
+  padding-top: 6.25rem;
+}
+
+.pr-25 {
+  padding-right: 6.25rem;
+}
+
+.pb-25 {
+  padding-bottom: 6.25rem;
+}
+
+.pl-25 {
+  padding-left: 6.25rem;
+}
+
 .pt-28 {
   padding-top: 7rem;
 }
@@ -3684,6 +4036,38 @@ button,
 
 .pl-28 {
   padding-left: 7rem;
+}
+
+.pt-29 {
+  padding-top: 7.25rem;
+}
+
+.pr-29 {
+  padding-right: 7.25rem;
+}
+
+.pb-29 {
+  padding-bottom: 7.25rem;
+}
+
+.pl-29 {
+  padding-left: 7.25rem;
+}
+
+.pt-35 {
+  padding-top: 8.75rem;
+}
+
+.pr-35 {
+  padding-right: 8.75rem;
+}
+
+.pb-35 {
+  padding-bottom: 8.75rem;
+}
+
+.pl-35 {
+  padding-left: 8.75rem;
 }
 
 .pt-px {
@@ -4016,7 +4400,7 @@ button,
 }
 
 .text-3xl {
-  font-size: 1.875rem;
+  font-size: 1.75rem;
 }
 
 .text-4xl {
@@ -5555,6 +5939,10 @@ button,
     margin: 3rem;
   }
 
+  .xs\:m-13 {
+    margin: 3.25rem;
+  }
+
   .xs\:m-15 {
     margin: 3.75rem;
   }
@@ -5575,12 +5963,24 @@ button,
     margin: 5rem;
   }
 
+  .xs\:m-22 {
+    margin: 5.5rem;
+  }
+
+  .xs\:m-23 {
+    margin: 5.75rem;
+  }
+
   .xs\:m-24 {
     margin: 6rem;
   }
 
   .xs\:m-28 {
     margin: 7rem;
+  }
+
+  .xs\:m-43 {
+    margin: 10.75rem;
   }
 
   .xs\:m-auto {
@@ -5713,6 +6113,16 @@ button,
     margin-right: 3rem;
   }
 
+  .xs\:my-13 {
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .xs\:mx-13 {
+    margin-left: 3.25rem;
+    margin-right: 3.25rem;
+  }
+
   .xs\:my-15 {
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
@@ -5763,6 +6173,26 @@ button,
     margin-right: 5rem;
   }
 
+  .xs\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .xs\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+
+  .xs\:my-23 {
+    margin-top: 5.75rem;
+    margin-bottom: 5.75rem;
+  }
+
+  .xs\:mx-23 {
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
+  }
+
   .xs\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -5781,6 +6211,16 @@ button,
   .xs\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .xs\:my-43 {
+    margin-top: 10.75rem;
+    margin-bottom: 10.75rem;
+  }
+
+  .xs\:mx-43 {
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
   }
 
   .xs\:my-auto {
@@ -6009,6 +6449,22 @@ button,
     margin-left: 3rem;
   }
 
+  .xs\:mt-13 {
+    margin-top: 3.25rem;
+  }
+
+  .xs\:mr-13 {
+    margin-right: 3.25rem;
+  }
+
+  .xs\:mb-13 {
+    margin-bottom: 3.25rem;
+  }
+
+  .xs\:ml-13 {
+    margin-left: 3.25rem;
+  }
+
   .xs\:mt-15 {
     margin-top: 3.75rem;
   }
@@ -6089,6 +6545,38 @@ button,
     margin-left: 5rem;
   }
 
+  .xs\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .xs\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .xs\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .xs\:ml-22 {
+    margin-left: 5.5rem;
+  }
+
+  .xs\:mt-23 {
+    margin-top: 5.75rem;
+  }
+
+  .xs\:mr-23 {
+    margin-right: 5.75rem;
+  }
+
+  .xs\:mb-23 {
+    margin-bottom: 5.75rem;
+  }
+
+  .xs\:ml-23 {
+    margin-left: 5.75rem;
+  }
+
   .xs\:mt-24 {
     margin-top: 6rem;
   }
@@ -6119,6 +6607,22 @@ button,
 
   .xs\:ml-28 {
     margin-left: 7rem;
+  }
+
+  .xs\:mt-43 {
+    margin-top: 10.75rem;
+  }
+
+  .xs\:mr-43 {
+    margin-right: 10.75rem;
+  }
+
+  .xs\:mb-43 {
+    margin-bottom: 10.75rem;
+  }
+
+  .xs\:ml-43 {
+    margin-left: 10.75rem;
   }
 
   .xs\:mt-auto {
@@ -6222,7 +6726,7 @@ button,
   }
 
   .xs\:max-w-md {
-    max-width: 45rem;
+    max-width: 48rem;
   }
 
   .xs\:max-w-lg {
@@ -6238,7 +6742,7 @@ button,
   }
 
   .xs\:max-w-3xl {
-    max-width: 80rem;
+    max-width: 74rem;
   }
 
   .xs\:max-w-4xl {
@@ -6303,6 +6807,10 @@ button,
 
   .xs\:-m-19 {
     margin: -4.75rem;
+  }
+
+  .xs\:-m-25 {
+    margin: -6.25rem;
   }
 
   .xs\:-m-px {
@@ -6387,6 +6895,16 @@ button,
   .xs\:-mx-19 {
     margin-left: -4.75rem;
     margin-right: -4.75rem;
+  }
+
+  .xs\:-my-25 {
+    margin-top: -6.25rem;
+    margin-bottom: -6.25rem;
+  }
+
+  .xs\:-mx-25 {
+    margin-left: -6.25rem;
+    margin-right: -6.25rem;
   }
 
   .xs\:-my-px {
@@ -6527,6 +7045,22 @@ button,
     margin-left: -4.75rem;
   }
 
+  .xs\:-mt-25 {
+    margin-top: -6.25rem;
+  }
+
+  .xs\:-mr-25 {
+    margin-right: -6.25rem;
+  }
+
+  .xs\:-mb-25 {
+    margin-bottom: -6.25rem;
+  }
+
+  .xs\:-ml-25 {
+    margin-left: -6.25rem;
+  }
+
   .xs\:-mt-px {
     margin-top: -1px;
   }
@@ -6625,6 +7159,10 @@ button,
     padding: 1.5rem;
   }
 
+  .xs\:p-7 {
+    padding: 1.75rem;
+  }
+
   .xs\:p-8 {
     padding: 2rem;
   }
@@ -6653,6 +7191,18 @@ button,
     padding: 3.5rem;
   }
 
+  .xs\:p-15 {
+    padding: 3.75rem;
+  }
+
+  .xs\:p-16 {
+    padding: 4rem;
+  }
+
+  .xs\:p-19 {
+    padding: 4.75rem;
+  }
+
   .xs\:p-20 {
     padding: 5rem;
   }
@@ -6665,8 +7215,20 @@ button,
     padding: 6rem;
   }
 
+  .xs\:p-25 {
+    padding: 6.25rem;
+  }
+
   .xs\:p-28 {
     padding: 7rem;
+  }
+
+  .xs\:p-29 {
+    padding: 7.25rem;
+  }
+
+  .xs\:p-35 {
+    padding: 8.75rem;
   }
 
   .xs\:p-px {
@@ -6743,6 +7305,16 @@ button,
     padding-right: 1.5rem;
   }
 
+  .xs\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .xs\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .xs\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -6813,6 +7385,36 @@ button,
     padding-right: 3.5rem;
   }
 
+  .xs\:py-15 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .xs\:px-15 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+
+  .xs\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xs\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xs\:py-19 {
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
+  }
+
+  .xs\:px-19 {
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+
   .xs\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -6843,6 +7445,16 @@ button,
     padding-right: 6rem;
   }
 
+  .xs\:py-25 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .xs\:px-25 {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+
   .xs\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -6851,6 +7463,26 @@ button,
   .xs\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .xs\:py-29 {
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+  }
+
+  .xs\:px-29 {
+    padding-left: 7.25rem;
+    padding-right: 7.25rem;
+  }
+
+  .xs\:py-35 {
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .xs\:px-35 {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 
   .xs\:py-px {
@@ -6975,6 +7607,22 @@ button,
     padding-left: 1.5rem;
   }
 
+  .xs\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .xs\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .xs\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .xs\:pl-7 {
+    padding-left: 1.75rem;
+  }
+
   .xs\:pt-8 {
     padding-top: 2rem;
   }
@@ -7087,6 +7735,54 @@ button,
     padding-left: 3.5rem;
   }
 
+  .xs\:pt-15 {
+    padding-top: 3.75rem;
+  }
+
+  .xs\:pr-15 {
+    padding-right: 3.75rem;
+  }
+
+  .xs\:pb-15 {
+    padding-bottom: 3.75rem;
+  }
+
+  .xs\:pl-15 {
+    padding-left: 3.75rem;
+  }
+
+  .xs\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .xs\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .xs\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .xs\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .xs\:pt-19 {
+    padding-top: 4.75rem;
+  }
+
+  .xs\:pr-19 {
+    padding-right: 4.75rem;
+  }
+
+  .xs\:pb-19 {
+    padding-bottom: 4.75rem;
+  }
+
+  .xs\:pl-19 {
+    padding-left: 4.75rem;
+  }
+
   .xs\:pt-20 {
     padding-top: 5rem;
   }
@@ -7135,6 +7831,22 @@ button,
     padding-left: 6rem;
   }
 
+  .xs\:pt-25 {
+    padding-top: 6.25rem;
+  }
+
+  .xs\:pr-25 {
+    padding-right: 6.25rem;
+  }
+
+  .xs\:pb-25 {
+    padding-bottom: 6.25rem;
+  }
+
+  .xs\:pl-25 {
+    padding-left: 6.25rem;
+  }
+
   .xs\:pt-28 {
     padding-top: 7rem;
   }
@@ -7149,6 +7861,38 @@ button,
 
   .xs\:pl-28 {
     padding-left: 7rem;
+  }
+
+  .xs\:pt-29 {
+    padding-top: 7.25rem;
+  }
+
+  .xs\:pr-29 {
+    padding-right: 7.25rem;
+  }
+
+  .xs\:pb-29 {
+    padding-bottom: 7.25rem;
+  }
+
+  .xs\:pl-29 {
+    padding-left: 7.25rem;
+  }
+
+  .xs\:pt-35 {
+    padding-top: 8.75rem;
+  }
+
+  .xs\:pr-35 {
+    padding-right: 8.75rem;
+  }
+
+  .xs\:pb-35 {
+    padding-bottom: 8.75rem;
+  }
+
+  .xs\:pl-35 {
+    padding-left: 8.75rem;
   }
 
   .xs\:pt-px {
@@ -7473,7 +8217,7 @@ button,
   }
 
   .xs\:text-3xl {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 
   .xs\:text-4xl {
@@ -9013,6 +9757,10 @@ button,
     margin: 3rem;
   }
 
+  .sm\:m-13 {
+    margin: 3.25rem;
+  }
+
   .sm\:m-15 {
     margin: 3.75rem;
   }
@@ -9033,12 +9781,24 @@ button,
     margin: 5rem;
   }
 
+  .sm\:m-22 {
+    margin: 5.5rem;
+  }
+
+  .sm\:m-23 {
+    margin: 5.75rem;
+  }
+
   .sm\:m-24 {
     margin: 6rem;
   }
 
   .sm\:m-28 {
     margin: 7rem;
+  }
+
+  .sm\:m-43 {
+    margin: 10.75rem;
   }
 
   .sm\:m-auto {
@@ -9171,6 +9931,16 @@ button,
     margin-right: 3rem;
   }
 
+  .sm\:my-13 {
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .sm\:mx-13 {
+    margin-left: 3.25rem;
+    margin-right: 3.25rem;
+  }
+
   .sm\:my-15 {
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
@@ -9221,6 +9991,26 @@ button,
     margin-right: 5rem;
   }
 
+  .sm\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .sm\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+
+  .sm\:my-23 {
+    margin-top: 5.75rem;
+    margin-bottom: 5.75rem;
+  }
+
+  .sm\:mx-23 {
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
+  }
+
   .sm\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -9239,6 +10029,16 @@ button,
   .sm\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .sm\:my-43 {
+    margin-top: 10.75rem;
+    margin-bottom: 10.75rem;
+  }
+
+  .sm\:mx-43 {
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
   }
 
   .sm\:my-auto {
@@ -9467,6 +10267,22 @@ button,
     margin-left: 3rem;
   }
 
+  .sm\:mt-13 {
+    margin-top: 3.25rem;
+  }
+
+  .sm\:mr-13 {
+    margin-right: 3.25rem;
+  }
+
+  .sm\:mb-13 {
+    margin-bottom: 3.25rem;
+  }
+
+  .sm\:ml-13 {
+    margin-left: 3.25rem;
+  }
+
   .sm\:mt-15 {
     margin-top: 3.75rem;
   }
@@ -9547,6 +10363,38 @@ button,
     margin-left: 5rem;
   }
 
+  .sm\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .sm\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .sm\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .sm\:ml-22 {
+    margin-left: 5.5rem;
+  }
+
+  .sm\:mt-23 {
+    margin-top: 5.75rem;
+  }
+
+  .sm\:mr-23 {
+    margin-right: 5.75rem;
+  }
+
+  .sm\:mb-23 {
+    margin-bottom: 5.75rem;
+  }
+
+  .sm\:ml-23 {
+    margin-left: 5.75rem;
+  }
+
   .sm\:mt-24 {
     margin-top: 6rem;
   }
@@ -9577,6 +10425,22 @@ button,
 
   .sm\:ml-28 {
     margin-left: 7rem;
+  }
+
+  .sm\:mt-43 {
+    margin-top: 10.75rem;
+  }
+
+  .sm\:mr-43 {
+    margin-right: 10.75rem;
+  }
+
+  .sm\:mb-43 {
+    margin-bottom: 10.75rem;
+  }
+
+  .sm\:ml-43 {
+    margin-left: 10.75rem;
   }
 
   .sm\:mt-auto {
@@ -9680,7 +10544,7 @@ button,
   }
 
   .sm\:max-w-md {
-    max-width: 45rem;
+    max-width: 48rem;
   }
 
   .sm\:max-w-lg {
@@ -9696,7 +10560,7 @@ button,
   }
 
   .sm\:max-w-3xl {
-    max-width: 80rem;
+    max-width: 74rem;
   }
 
   .sm\:max-w-4xl {
@@ -9761,6 +10625,10 @@ button,
 
   .sm\:-m-19 {
     margin: -4.75rem;
+  }
+
+  .sm\:-m-25 {
+    margin: -6.25rem;
   }
 
   .sm\:-m-px {
@@ -9845,6 +10713,16 @@ button,
   .sm\:-mx-19 {
     margin-left: -4.75rem;
     margin-right: -4.75rem;
+  }
+
+  .sm\:-my-25 {
+    margin-top: -6.25rem;
+    margin-bottom: -6.25rem;
+  }
+
+  .sm\:-mx-25 {
+    margin-left: -6.25rem;
+    margin-right: -6.25rem;
   }
 
   .sm\:-my-px {
@@ -9985,6 +10863,22 @@ button,
     margin-left: -4.75rem;
   }
 
+  .sm\:-mt-25 {
+    margin-top: -6.25rem;
+  }
+
+  .sm\:-mr-25 {
+    margin-right: -6.25rem;
+  }
+
+  .sm\:-mb-25 {
+    margin-bottom: -6.25rem;
+  }
+
+  .sm\:-ml-25 {
+    margin-left: -6.25rem;
+  }
+
   .sm\:-mt-px {
     margin-top: -1px;
   }
@@ -10083,6 +10977,10 @@ button,
     padding: 1.5rem;
   }
 
+  .sm\:p-7 {
+    padding: 1.75rem;
+  }
+
   .sm\:p-8 {
     padding: 2rem;
   }
@@ -10111,6 +11009,18 @@ button,
     padding: 3.5rem;
   }
 
+  .sm\:p-15 {
+    padding: 3.75rem;
+  }
+
+  .sm\:p-16 {
+    padding: 4rem;
+  }
+
+  .sm\:p-19 {
+    padding: 4.75rem;
+  }
+
   .sm\:p-20 {
     padding: 5rem;
   }
@@ -10123,8 +11033,20 @@ button,
     padding: 6rem;
   }
 
+  .sm\:p-25 {
+    padding: 6.25rem;
+  }
+
   .sm\:p-28 {
     padding: 7rem;
+  }
+
+  .sm\:p-29 {
+    padding: 7.25rem;
+  }
+
+  .sm\:p-35 {
+    padding: 8.75rem;
   }
 
   .sm\:p-px {
@@ -10201,6 +11123,16 @@ button,
     padding-right: 1.5rem;
   }
 
+  .sm\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .sm\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -10271,6 +11203,36 @@ button,
     padding-right: 3.5rem;
   }
 
+  .sm\:py-15 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .sm\:px-15 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:py-19 {
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
+  }
+
+  .sm\:px-19 {
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+
   .sm\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -10301,6 +11263,16 @@ button,
     padding-right: 6rem;
   }
 
+  .sm\:py-25 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .sm\:px-25 {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+
   .sm\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -10309,6 +11281,26 @@ button,
   .sm\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .sm\:py-29 {
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+  }
+
+  .sm\:px-29 {
+    padding-left: 7.25rem;
+    padding-right: 7.25rem;
+  }
+
+  .sm\:py-35 {
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .sm\:px-35 {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 
   .sm\:py-px {
@@ -10433,6 +11425,22 @@ button,
     padding-left: 1.5rem;
   }
 
+  .sm\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .sm\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .sm\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .sm\:pl-7 {
+    padding-left: 1.75rem;
+  }
+
   .sm\:pt-8 {
     padding-top: 2rem;
   }
@@ -10545,6 +11553,54 @@ button,
     padding-left: 3.5rem;
   }
 
+  .sm\:pt-15 {
+    padding-top: 3.75rem;
+  }
+
+  .sm\:pr-15 {
+    padding-right: 3.75rem;
+  }
+
+  .sm\:pb-15 {
+    padding-bottom: 3.75rem;
+  }
+
+  .sm\:pl-15 {
+    padding-left: 3.75rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .sm\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .sm\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .sm\:pt-19 {
+    padding-top: 4.75rem;
+  }
+
+  .sm\:pr-19 {
+    padding-right: 4.75rem;
+  }
+
+  .sm\:pb-19 {
+    padding-bottom: 4.75rem;
+  }
+
+  .sm\:pl-19 {
+    padding-left: 4.75rem;
+  }
+
   .sm\:pt-20 {
     padding-top: 5rem;
   }
@@ -10593,6 +11649,22 @@ button,
     padding-left: 6rem;
   }
 
+  .sm\:pt-25 {
+    padding-top: 6.25rem;
+  }
+
+  .sm\:pr-25 {
+    padding-right: 6.25rem;
+  }
+
+  .sm\:pb-25 {
+    padding-bottom: 6.25rem;
+  }
+
+  .sm\:pl-25 {
+    padding-left: 6.25rem;
+  }
+
   .sm\:pt-28 {
     padding-top: 7rem;
   }
@@ -10607,6 +11679,38 @@ button,
 
   .sm\:pl-28 {
     padding-left: 7rem;
+  }
+
+  .sm\:pt-29 {
+    padding-top: 7.25rem;
+  }
+
+  .sm\:pr-29 {
+    padding-right: 7.25rem;
+  }
+
+  .sm\:pb-29 {
+    padding-bottom: 7.25rem;
+  }
+
+  .sm\:pl-29 {
+    padding-left: 7.25rem;
+  }
+
+  .sm\:pt-35 {
+    padding-top: 8.75rem;
+  }
+
+  .sm\:pr-35 {
+    padding-right: 8.75rem;
+  }
+
+  .sm\:pb-35 {
+    padding-bottom: 8.75rem;
+  }
+
+  .sm\:pl-35 {
+    padding-left: 8.75rem;
   }
 
   .sm\:pt-px {
@@ -10931,7 +12035,7 @@ button,
   }
 
   .sm\:text-3xl {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 
   .sm\:text-4xl {
@@ -12471,6 +13575,10 @@ button,
     margin: 3rem;
   }
 
+  .md\:m-13 {
+    margin: 3.25rem;
+  }
+
   .md\:m-15 {
     margin: 3.75rem;
   }
@@ -12491,12 +13599,24 @@ button,
     margin: 5rem;
   }
 
+  .md\:m-22 {
+    margin: 5.5rem;
+  }
+
+  .md\:m-23 {
+    margin: 5.75rem;
+  }
+
   .md\:m-24 {
     margin: 6rem;
   }
 
   .md\:m-28 {
     margin: 7rem;
+  }
+
+  .md\:m-43 {
+    margin: 10.75rem;
   }
 
   .md\:m-auto {
@@ -12629,6 +13749,16 @@ button,
     margin-right: 3rem;
   }
 
+  .md\:my-13 {
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .md\:mx-13 {
+    margin-left: 3.25rem;
+    margin-right: 3.25rem;
+  }
+
   .md\:my-15 {
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
@@ -12679,6 +13809,26 @@ button,
     margin-right: 5rem;
   }
 
+  .md\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .md\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+
+  .md\:my-23 {
+    margin-top: 5.75rem;
+    margin-bottom: 5.75rem;
+  }
+
+  .md\:mx-23 {
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
+  }
+
   .md\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -12697,6 +13847,16 @@ button,
   .md\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .md\:my-43 {
+    margin-top: 10.75rem;
+    margin-bottom: 10.75rem;
+  }
+
+  .md\:mx-43 {
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
   }
 
   .md\:my-auto {
@@ -12925,6 +14085,22 @@ button,
     margin-left: 3rem;
   }
 
+  .md\:mt-13 {
+    margin-top: 3.25rem;
+  }
+
+  .md\:mr-13 {
+    margin-right: 3.25rem;
+  }
+
+  .md\:mb-13 {
+    margin-bottom: 3.25rem;
+  }
+
+  .md\:ml-13 {
+    margin-left: 3.25rem;
+  }
+
   .md\:mt-15 {
     margin-top: 3.75rem;
   }
@@ -13005,6 +14181,38 @@ button,
     margin-left: 5rem;
   }
 
+  .md\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .md\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .md\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .md\:ml-22 {
+    margin-left: 5.5rem;
+  }
+
+  .md\:mt-23 {
+    margin-top: 5.75rem;
+  }
+
+  .md\:mr-23 {
+    margin-right: 5.75rem;
+  }
+
+  .md\:mb-23 {
+    margin-bottom: 5.75rem;
+  }
+
+  .md\:ml-23 {
+    margin-left: 5.75rem;
+  }
+
   .md\:mt-24 {
     margin-top: 6rem;
   }
@@ -13035,6 +14243,22 @@ button,
 
   .md\:ml-28 {
     margin-left: 7rem;
+  }
+
+  .md\:mt-43 {
+    margin-top: 10.75rem;
+  }
+
+  .md\:mr-43 {
+    margin-right: 10.75rem;
+  }
+
+  .md\:mb-43 {
+    margin-bottom: 10.75rem;
+  }
+
+  .md\:ml-43 {
+    margin-left: 10.75rem;
   }
 
   .md\:mt-auto {
@@ -13138,7 +14362,7 @@ button,
   }
 
   .md\:max-w-md {
-    max-width: 45rem;
+    max-width: 48rem;
   }
 
   .md\:max-w-lg {
@@ -13154,7 +14378,7 @@ button,
   }
 
   .md\:max-w-3xl {
-    max-width: 80rem;
+    max-width: 74rem;
   }
 
   .md\:max-w-4xl {
@@ -13219,6 +14443,10 @@ button,
 
   .md\:-m-19 {
     margin: -4.75rem;
+  }
+
+  .md\:-m-25 {
+    margin: -6.25rem;
   }
 
   .md\:-m-px {
@@ -13303,6 +14531,16 @@ button,
   .md\:-mx-19 {
     margin-left: -4.75rem;
     margin-right: -4.75rem;
+  }
+
+  .md\:-my-25 {
+    margin-top: -6.25rem;
+    margin-bottom: -6.25rem;
+  }
+
+  .md\:-mx-25 {
+    margin-left: -6.25rem;
+    margin-right: -6.25rem;
   }
 
   .md\:-my-px {
@@ -13443,6 +14681,22 @@ button,
     margin-left: -4.75rem;
   }
 
+  .md\:-mt-25 {
+    margin-top: -6.25rem;
+  }
+
+  .md\:-mr-25 {
+    margin-right: -6.25rem;
+  }
+
+  .md\:-mb-25 {
+    margin-bottom: -6.25rem;
+  }
+
+  .md\:-ml-25 {
+    margin-left: -6.25rem;
+  }
+
   .md\:-mt-px {
     margin-top: -1px;
   }
@@ -13541,6 +14795,10 @@ button,
     padding: 1.5rem;
   }
 
+  .md\:p-7 {
+    padding: 1.75rem;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
@@ -13569,6 +14827,18 @@ button,
     padding: 3.5rem;
   }
 
+  .md\:p-15 {
+    padding: 3.75rem;
+  }
+
+  .md\:p-16 {
+    padding: 4rem;
+  }
+
+  .md\:p-19 {
+    padding: 4.75rem;
+  }
+
   .md\:p-20 {
     padding: 5rem;
   }
@@ -13581,8 +14851,20 @@ button,
     padding: 6rem;
   }
 
+  .md\:p-25 {
+    padding: 6.25rem;
+  }
+
   .md\:p-28 {
     padding: 7rem;
+  }
+
+  .md\:p-29 {
+    padding: 7.25rem;
+  }
+
+  .md\:p-35 {
+    padding: 8.75rem;
   }
 
   .md\:p-px {
@@ -13659,6 +14941,16 @@ button,
     padding-right: 1.5rem;
   }
 
+  .md\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -13729,6 +15021,36 @@ button,
     padding-right: 3.5rem;
   }
 
+  .md\:py-15 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .md\:px-15 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:py-19 {
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
+  }
+
+  .md\:px-19 {
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -13759,6 +15081,16 @@ button,
     padding-right: 6rem;
   }
 
+  .md\:py-25 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .md\:px-25 {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+
   .md\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -13767,6 +15099,26 @@ button,
   .md\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .md\:py-29 {
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+  }
+
+  .md\:px-29 {
+    padding-left: 7.25rem;
+    padding-right: 7.25rem;
+  }
+
+  .md\:py-35 {
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .md\:px-35 {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 
   .md\:py-px {
@@ -13891,6 +15243,22 @@ button,
     padding-left: 1.5rem;
   }
 
+  .md\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .md\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .md\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:pl-7 {
+    padding-left: 1.75rem;
+  }
+
   .md\:pt-8 {
     padding-top: 2rem;
   }
@@ -14003,6 +15371,54 @@ button,
     padding-left: 3.5rem;
   }
 
+  .md\:pt-15 {
+    padding-top: 3.75rem;
+  }
+
+  .md\:pr-15 {
+    padding-right: 3.75rem;
+  }
+
+  .md\:pb-15 {
+    padding-bottom: 3.75rem;
+  }
+
+  .md\:pl-15 {
+    padding-left: 3.75rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .md\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .md\:pt-19 {
+    padding-top: 4.75rem;
+  }
+
+  .md\:pr-19 {
+    padding-right: 4.75rem;
+  }
+
+  .md\:pb-19 {
+    padding-bottom: 4.75rem;
+  }
+
+  .md\:pl-19 {
+    padding-left: 4.75rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
@@ -14051,6 +15467,22 @@ button,
     padding-left: 6rem;
   }
 
+  .md\:pt-25 {
+    padding-top: 6.25rem;
+  }
+
+  .md\:pr-25 {
+    padding-right: 6.25rem;
+  }
+
+  .md\:pb-25 {
+    padding-bottom: 6.25rem;
+  }
+
+  .md\:pl-25 {
+    padding-left: 6.25rem;
+  }
+
   .md\:pt-28 {
     padding-top: 7rem;
   }
@@ -14065,6 +15497,38 @@ button,
 
   .md\:pl-28 {
     padding-left: 7rem;
+  }
+
+  .md\:pt-29 {
+    padding-top: 7.25rem;
+  }
+
+  .md\:pr-29 {
+    padding-right: 7.25rem;
+  }
+
+  .md\:pb-29 {
+    padding-bottom: 7.25rem;
+  }
+
+  .md\:pl-29 {
+    padding-left: 7.25rem;
+  }
+
+  .md\:pt-35 {
+    padding-top: 8.75rem;
+  }
+
+  .md\:pr-35 {
+    padding-right: 8.75rem;
+  }
+
+  .md\:pb-35 {
+    padding-bottom: 8.75rem;
+  }
+
+  .md\:pl-35 {
+    padding-left: 8.75rem;
   }
 
   .md\:pt-px {
@@ -14389,7 +15853,7 @@ button,
   }
 
   .md\:text-3xl {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 
   .md\:text-4xl {
@@ -15929,6 +17393,10 @@ button,
     margin: 3rem;
   }
 
+  .lg\:m-13 {
+    margin: 3.25rem;
+  }
+
   .lg\:m-15 {
     margin: 3.75rem;
   }
@@ -15949,12 +17417,24 @@ button,
     margin: 5rem;
   }
 
+  .lg\:m-22 {
+    margin: 5.5rem;
+  }
+
+  .lg\:m-23 {
+    margin: 5.75rem;
+  }
+
   .lg\:m-24 {
     margin: 6rem;
   }
 
   .lg\:m-28 {
     margin: 7rem;
+  }
+
+  .lg\:m-43 {
+    margin: 10.75rem;
   }
 
   .lg\:m-auto {
@@ -16087,6 +17567,16 @@ button,
     margin-right: 3rem;
   }
 
+  .lg\:my-13 {
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .lg\:mx-13 {
+    margin-left: 3.25rem;
+    margin-right: 3.25rem;
+  }
+
   .lg\:my-15 {
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
@@ -16137,6 +17627,26 @@ button,
     margin-right: 5rem;
   }
 
+  .lg\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .lg\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+
+  .lg\:my-23 {
+    margin-top: 5.75rem;
+    margin-bottom: 5.75rem;
+  }
+
+  .lg\:mx-23 {
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
+  }
+
   .lg\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -16155,6 +17665,16 @@ button,
   .lg\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .lg\:my-43 {
+    margin-top: 10.75rem;
+    margin-bottom: 10.75rem;
+  }
+
+  .lg\:mx-43 {
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
   }
 
   .lg\:my-auto {
@@ -16383,6 +17903,22 @@ button,
     margin-left: 3rem;
   }
 
+  .lg\:mt-13 {
+    margin-top: 3.25rem;
+  }
+
+  .lg\:mr-13 {
+    margin-right: 3.25rem;
+  }
+
+  .lg\:mb-13 {
+    margin-bottom: 3.25rem;
+  }
+
+  .lg\:ml-13 {
+    margin-left: 3.25rem;
+  }
+
   .lg\:mt-15 {
     margin-top: 3.75rem;
   }
@@ -16463,6 +17999,38 @@ button,
     margin-left: 5rem;
   }
 
+  .lg\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .lg\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .lg\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .lg\:ml-22 {
+    margin-left: 5.5rem;
+  }
+
+  .lg\:mt-23 {
+    margin-top: 5.75rem;
+  }
+
+  .lg\:mr-23 {
+    margin-right: 5.75rem;
+  }
+
+  .lg\:mb-23 {
+    margin-bottom: 5.75rem;
+  }
+
+  .lg\:ml-23 {
+    margin-left: 5.75rem;
+  }
+
   .lg\:mt-24 {
     margin-top: 6rem;
   }
@@ -16493,6 +18061,22 @@ button,
 
   .lg\:ml-28 {
     margin-left: 7rem;
+  }
+
+  .lg\:mt-43 {
+    margin-top: 10.75rem;
+  }
+
+  .lg\:mr-43 {
+    margin-right: 10.75rem;
+  }
+
+  .lg\:mb-43 {
+    margin-bottom: 10.75rem;
+  }
+
+  .lg\:ml-43 {
+    margin-left: 10.75rem;
   }
 
   .lg\:mt-auto {
@@ -16596,7 +18180,7 @@ button,
   }
 
   .lg\:max-w-md {
-    max-width: 45rem;
+    max-width: 48rem;
   }
 
   .lg\:max-w-lg {
@@ -16612,7 +18196,7 @@ button,
   }
 
   .lg\:max-w-3xl {
-    max-width: 80rem;
+    max-width: 74rem;
   }
 
   .lg\:max-w-4xl {
@@ -16677,6 +18261,10 @@ button,
 
   .lg\:-m-19 {
     margin: -4.75rem;
+  }
+
+  .lg\:-m-25 {
+    margin: -6.25rem;
   }
 
   .lg\:-m-px {
@@ -16761,6 +18349,16 @@ button,
   .lg\:-mx-19 {
     margin-left: -4.75rem;
     margin-right: -4.75rem;
+  }
+
+  .lg\:-my-25 {
+    margin-top: -6.25rem;
+    margin-bottom: -6.25rem;
+  }
+
+  .lg\:-mx-25 {
+    margin-left: -6.25rem;
+    margin-right: -6.25rem;
   }
 
   .lg\:-my-px {
@@ -16901,6 +18499,22 @@ button,
     margin-left: -4.75rem;
   }
 
+  .lg\:-mt-25 {
+    margin-top: -6.25rem;
+  }
+
+  .lg\:-mr-25 {
+    margin-right: -6.25rem;
+  }
+
+  .lg\:-mb-25 {
+    margin-bottom: -6.25rem;
+  }
+
+  .lg\:-ml-25 {
+    margin-left: -6.25rem;
+  }
+
   .lg\:-mt-px {
     margin-top: -1px;
   }
@@ -16999,6 +18613,10 @@ button,
     padding: 1.5rem;
   }
 
+  .lg\:p-7 {
+    padding: 1.75rem;
+  }
+
   .lg\:p-8 {
     padding: 2rem;
   }
@@ -17027,6 +18645,18 @@ button,
     padding: 3.5rem;
   }
 
+  .lg\:p-15 {
+    padding: 3.75rem;
+  }
+
+  .lg\:p-16 {
+    padding: 4rem;
+  }
+
+  .lg\:p-19 {
+    padding: 4.75rem;
+  }
+
   .lg\:p-20 {
     padding: 5rem;
   }
@@ -17039,8 +18669,20 @@ button,
     padding: 6rem;
   }
 
+  .lg\:p-25 {
+    padding: 6.25rem;
+  }
+
   .lg\:p-28 {
     padding: 7rem;
+  }
+
+  .lg\:p-29 {
+    padding: 7.25rem;
+  }
+
+  .lg\:p-35 {
+    padding: 8.75rem;
   }
 
   .lg\:p-px {
@@ -17117,6 +18759,16 @@ button,
     padding-right: 1.5rem;
   }
 
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -17187,6 +18839,36 @@ button,
     padding-right: 3.5rem;
   }
 
+  .lg\:py-15 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .lg\:px-15 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-19 {
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
+  }
+
+  .lg\:px-19 {
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -17217,6 +18899,16 @@ button,
     padding-right: 6rem;
   }
 
+  .lg\:py-25 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .lg\:px-25 {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+
   .lg\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -17225,6 +18917,26 @@ button,
   .lg\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .lg\:py-29 {
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+  }
+
+  .lg\:px-29 {
+    padding-left: 7.25rem;
+    padding-right: 7.25rem;
+  }
+
+  .lg\:py-35 {
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .lg\:px-35 {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 
   .lg\:py-px {
@@ -17349,6 +19061,22 @@ button,
     padding-left: 1.5rem;
   }
 
+  .lg\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .lg\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .lg\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:pl-7 {
+    padding-left: 1.75rem;
+  }
+
   .lg\:pt-8 {
     padding-top: 2rem;
   }
@@ -17461,6 +19189,54 @@ button,
     padding-left: 3.5rem;
   }
 
+  .lg\:pt-15 {
+    padding-top: 3.75rem;
+  }
+
+  .lg\:pr-15 {
+    padding-right: 3.75rem;
+  }
+
+  .lg\:pb-15 {
+    padding-bottom: 3.75rem;
+  }
+
+  .lg\:pl-15 {
+    padding-left: 3.75rem;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .lg\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .lg\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .lg\:pt-19 {
+    padding-top: 4.75rem;
+  }
+
+  .lg\:pr-19 {
+    padding-right: 4.75rem;
+  }
+
+  .lg\:pb-19 {
+    padding-bottom: 4.75rem;
+  }
+
+  .lg\:pl-19 {
+    padding-left: 4.75rem;
+  }
+
   .lg\:pt-20 {
     padding-top: 5rem;
   }
@@ -17509,6 +19285,22 @@ button,
     padding-left: 6rem;
   }
 
+  .lg\:pt-25 {
+    padding-top: 6.25rem;
+  }
+
+  .lg\:pr-25 {
+    padding-right: 6.25rem;
+  }
+
+  .lg\:pb-25 {
+    padding-bottom: 6.25rem;
+  }
+
+  .lg\:pl-25 {
+    padding-left: 6.25rem;
+  }
+
   .lg\:pt-28 {
     padding-top: 7rem;
   }
@@ -17523,6 +19315,38 @@ button,
 
   .lg\:pl-28 {
     padding-left: 7rem;
+  }
+
+  .lg\:pt-29 {
+    padding-top: 7.25rem;
+  }
+
+  .lg\:pr-29 {
+    padding-right: 7.25rem;
+  }
+
+  .lg\:pb-29 {
+    padding-bottom: 7.25rem;
+  }
+
+  .lg\:pl-29 {
+    padding-left: 7.25rem;
+  }
+
+  .lg\:pt-35 {
+    padding-top: 8.75rem;
+  }
+
+  .lg\:pr-35 {
+    padding-right: 8.75rem;
+  }
+
+  .lg\:pb-35 {
+    padding-bottom: 8.75rem;
+  }
+
+  .lg\:pl-35 {
+    padding-left: 8.75rem;
   }
 
   .lg\:pt-px {
@@ -17847,7 +19671,7 @@ button,
   }
 
   .lg\:text-3xl {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 
   .lg\:text-4xl {
@@ -19387,6 +21211,10 @@ button,
     margin: 3rem;
   }
 
+  .xl\:m-13 {
+    margin: 3.25rem;
+  }
+
   .xl\:m-15 {
     margin: 3.75rem;
   }
@@ -19407,12 +21235,24 @@ button,
     margin: 5rem;
   }
 
+  .xl\:m-22 {
+    margin: 5.5rem;
+  }
+
+  .xl\:m-23 {
+    margin: 5.75rem;
+  }
+
   .xl\:m-24 {
     margin: 6rem;
   }
 
   .xl\:m-28 {
     margin: 7rem;
+  }
+
+  .xl\:m-43 {
+    margin: 10.75rem;
   }
 
   .xl\:m-auto {
@@ -19545,6 +21385,16 @@ button,
     margin-right: 3rem;
   }
 
+  .xl\:my-13 {
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .xl\:mx-13 {
+    margin-left: 3.25rem;
+    margin-right: 3.25rem;
+  }
+
   .xl\:my-15 {
     margin-top: 3.75rem;
     margin-bottom: 3.75rem;
@@ -19595,6 +21445,26 @@ button,
     margin-right: 5rem;
   }
 
+  .xl\:my-22 {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .xl\:mx-22 {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+
+  .xl\:my-23 {
+    margin-top: 5.75rem;
+    margin-bottom: 5.75rem;
+  }
+
+  .xl\:mx-23 {
+    margin-left: 5.75rem;
+    margin-right: 5.75rem;
+  }
+
   .xl\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -19613,6 +21483,16 @@ button,
   .xl\:mx-28 {
     margin-left: 7rem;
     margin-right: 7rem;
+  }
+
+  .xl\:my-43 {
+    margin-top: 10.75rem;
+    margin-bottom: 10.75rem;
+  }
+
+  .xl\:mx-43 {
+    margin-left: 10.75rem;
+    margin-right: 10.75rem;
   }
 
   .xl\:my-auto {
@@ -19841,6 +21721,22 @@ button,
     margin-left: 3rem;
   }
 
+  .xl\:mt-13 {
+    margin-top: 3.25rem;
+  }
+
+  .xl\:mr-13 {
+    margin-right: 3.25rem;
+  }
+
+  .xl\:mb-13 {
+    margin-bottom: 3.25rem;
+  }
+
+  .xl\:ml-13 {
+    margin-left: 3.25rem;
+  }
+
   .xl\:mt-15 {
     margin-top: 3.75rem;
   }
@@ -19921,6 +21817,38 @@ button,
     margin-left: 5rem;
   }
 
+  .xl\:mt-22 {
+    margin-top: 5.5rem;
+  }
+
+  .xl\:mr-22 {
+    margin-right: 5.5rem;
+  }
+
+  .xl\:mb-22 {
+    margin-bottom: 5.5rem;
+  }
+
+  .xl\:ml-22 {
+    margin-left: 5.5rem;
+  }
+
+  .xl\:mt-23 {
+    margin-top: 5.75rem;
+  }
+
+  .xl\:mr-23 {
+    margin-right: 5.75rem;
+  }
+
+  .xl\:mb-23 {
+    margin-bottom: 5.75rem;
+  }
+
+  .xl\:ml-23 {
+    margin-left: 5.75rem;
+  }
+
   .xl\:mt-24 {
     margin-top: 6rem;
   }
@@ -19951,6 +21879,22 @@ button,
 
   .xl\:ml-28 {
     margin-left: 7rem;
+  }
+
+  .xl\:mt-43 {
+    margin-top: 10.75rem;
+  }
+
+  .xl\:mr-43 {
+    margin-right: 10.75rem;
+  }
+
+  .xl\:mb-43 {
+    margin-bottom: 10.75rem;
+  }
+
+  .xl\:ml-43 {
+    margin-left: 10.75rem;
   }
 
   .xl\:mt-auto {
@@ -20054,7 +21998,7 @@ button,
   }
 
   .xl\:max-w-md {
-    max-width: 45rem;
+    max-width: 48rem;
   }
 
   .xl\:max-w-lg {
@@ -20070,7 +22014,7 @@ button,
   }
 
   .xl\:max-w-3xl {
-    max-width: 80rem;
+    max-width: 74rem;
   }
 
   .xl\:max-w-4xl {
@@ -20135,6 +22079,10 @@ button,
 
   .xl\:-m-19 {
     margin: -4.75rem;
+  }
+
+  .xl\:-m-25 {
+    margin: -6.25rem;
   }
 
   .xl\:-m-px {
@@ -20219,6 +22167,16 @@ button,
   .xl\:-mx-19 {
     margin-left: -4.75rem;
     margin-right: -4.75rem;
+  }
+
+  .xl\:-my-25 {
+    margin-top: -6.25rem;
+    margin-bottom: -6.25rem;
+  }
+
+  .xl\:-mx-25 {
+    margin-left: -6.25rem;
+    margin-right: -6.25rem;
   }
 
   .xl\:-my-px {
@@ -20359,6 +22317,22 @@ button,
     margin-left: -4.75rem;
   }
 
+  .xl\:-mt-25 {
+    margin-top: -6.25rem;
+  }
+
+  .xl\:-mr-25 {
+    margin-right: -6.25rem;
+  }
+
+  .xl\:-mb-25 {
+    margin-bottom: -6.25rem;
+  }
+
+  .xl\:-ml-25 {
+    margin-left: -6.25rem;
+  }
+
   .xl\:-mt-px {
     margin-top: -1px;
   }
@@ -20457,6 +22431,10 @@ button,
     padding: 1.5rem;
   }
 
+  .xl\:p-7 {
+    padding: 1.75rem;
+  }
+
   .xl\:p-8 {
     padding: 2rem;
   }
@@ -20485,6 +22463,18 @@ button,
     padding: 3.5rem;
   }
 
+  .xl\:p-15 {
+    padding: 3.75rem;
+  }
+
+  .xl\:p-16 {
+    padding: 4rem;
+  }
+
+  .xl\:p-19 {
+    padding: 4.75rem;
+  }
+
   .xl\:p-20 {
     padding: 5rem;
   }
@@ -20497,8 +22487,20 @@ button,
     padding: 6rem;
   }
 
+  .xl\:p-25 {
+    padding: 6.25rem;
+  }
+
   .xl\:p-28 {
     padding: 7rem;
+  }
+
+  .xl\:p-29 {
+    padding: 7.25rem;
+  }
+
+  .xl\:p-35 {
+    padding: 8.75rem;
   }
 
   .xl\:p-px {
@@ -20575,6 +22577,16 @@ button,
     padding-right: 1.5rem;
   }
 
+  .xl\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .xl\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
   .xl\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -20645,6 +22657,36 @@ button,
     padding-right: 3.5rem;
   }
 
+  .xl\:py-15 {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .xl\:px-15 {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:py-19 {
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
+  }
+
+  .xl\:px-19 {
+    padding-left: 4.75rem;
+    padding-right: 4.75rem;
+  }
+
   .xl\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -20675,6 +22717,16 @@ button,
     padding-right: 6rem;
   }
 
+  .xl\:py-25 {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+
+  .xl\:px-25 {
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+
   .xl\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -20683,6 +22735,26 @@ button,
   .xl\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .xl\:py-29 {
+    padding-top: 7.25rem;
+    padding-bottom: 7.25rem;
+  }
+
+  .xl\:px-29 {
+    padding-left: 7.25rem;
+    padding-right: 7.25rem;
+  }
+
+  .xl\:py-35 {
+    padding-top: 8.75rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .xl\:px-35 {
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 
   .xl\:py-px {
@@ -20807,6 +22879,22 @@ button,
     padding-left: 1.5rem;
   }
 
+  .xl\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .xl\:pr-7 {
+    padding-right: 1.75rem;
+  }
+
+  .xl\:pb-7 {
+    padding-bottom: 1.75rem;
+  }
+
+  .xl\:pl-7 {
+    padding-left: 1.75rem;
+  }
+
   .xl\:pt-8 {
     padding-top: 2rem;
   }
@@ -20919,6 +23007,54 @@ button,
     padding-left: 3.5rem;
   }
 
+  .xl\:pt-15 {
+    padding-top: 3.75rem;
+  }
+
+  .xl\:pr-15 {
+    padding-right: 3.75rem;
+  }
+
+  .xl\:pb-15 {
+    padding-bottom: 3.75rem;
+  }
+
+  .xl\:pl-15 {
+    padding-left: 3.75rem;
+  }
+
+  .xl\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .xl\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .xl\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .xl\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .xl\:pt-19 {
+    padding-top: 4.75rem;
+  }
+
+  .xl\:pr-19 {
+    padding-right: 4.75rem;
+  }
+
+  .xl\:pb-19 {
+    padding-bottom: 4.75rem;
+  }
+
+  .xl\:pl-19 {
+    padding-left: 4.75rem;
+  }
+
   .xl\:pt-20 {
     padding-top: 5rem;
   }
@@ -20967,6 +23103,22 @@ button,
     padding-left: 6rem;
   }
 
+  .xl\:pt-25 {
+    padding-top: 6.25rem;
+  }
+
+  .xl\:pr-25 {
+    padding-right: 6.25rem;
+  }
+
+  .xl\:pb-25 {
+    padding-bottom: 6.25rem;
+  }
+
+  .xl\:pl-25 {
+    padding-left: 6.25rem;
+  }
+
   .xl\:pt-28 {
     padding-top: 7rem;
   }
@@ -20981,6 +23133,38 @@ button,
 
   .xl\:pl-28 {
     padding-left: 7rem;
+  }
+
+  .xl\:pt-29 {
+    padding-top: 7.25rem;
+  }
+
+  .xl\:pr-29 {
+    padding-right: 7.25rem;
+  }
+
+  .xl\:pb-29 {
+    padding-bottom: 7.25rem;
+  }
+
+  .xl\:pl-29 {
+    padding-left: 7.25rem;
+  }
+
+  .xl\:pt-35 {
+    padding-top: 8.75rem;
+  }
+
+  .xl\:pr-35 {
+    padding-right: 8.75rem;
+  }
+
+  .xl\:pb-35 {
+    padding-bottom: 8.75rem;
+  }
+
+  .xl\:pl-35 {
+    padding-left: 8.75rem;
   }
 
   .xl\:pt-px {
@@ -21305,7 +23489,7 @@ button,
   }
 
   .xl\:text-3xl {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 
   .xl\:text-4xl {

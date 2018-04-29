@@ -13,8 +13,8 @@
     
     <!--   Nav   -->
     <nav>
-        <ul class="flex justify-between list-reset text-1xs uppercase   sm:text-sm">
-            <li class="mx-3   xs:mx-6   sm:mx-8   md:ml-15 md:mr-0">
+        <ul class="flex justify-between list-reset text-1xs uppercase tracking-normal   sm:text-sm">
+            <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
                 <a class="no-underline
                     {{ if eq .Title "Home" }}
                         text-yellow hover:text-grey-dark
@@ -23,16 +23,16 @@
                     {{end}}"
                 href="/">Home</a>
             </li>
-            <li class="mx-3   xs:mx-6   sm:mx-8   md:ml-15 md:mr-0">
+            <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
                 <a class="no-underline
-                    {{ if eq .Title "About Us" }}
+                    {{ if eq .Title "About" }}
                         text-yellow hover:text-grey-dark
                     {{ else }}
                         text-grey-dark hover:text-yellow
                     {{end}}"
                 href="/about">About Us</a>
             </li>
-            <li class="mx-3   xs:mx-6   sm:mx-8   md:ml-15 md:mr-0">
+            <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
                 <a class="no-underline
                     {{ if eq .Title "Projects" }}
                         text-yellow hover:text-grey-dark
@@ -41,7 +41,7 @@
                     {{end}}"
                 href="/projects">Projects</a>
             </li>
-            <li class="mx-3   xs:mx-6   sm:mx-8   md:ml-15 md:mr-0">
+            <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
                 <a class="no-underline
                     {{ if eq .Title "Contact" }}
                         text-yellow hover:text-grey-dark
