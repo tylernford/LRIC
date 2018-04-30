@@ -208,6 +208,8 @@ a {
   text-align: center;
   letter-spacing: .05em;
   text-transform: uppercase;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .btn.\--small {
@@ -223,7 +225,18 @@ a {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
   font-size: .75rem;
+}
+
+.btn.\--medium.\--thin {
   padding-top: 13.5px;
+}
+
+.btn.\--medium.\--solid {
+  padding-top: 14.5px;
+}
+
+button.btn.\--medium {
+  padding-top: 1px;
 }
 
 .grow-old {

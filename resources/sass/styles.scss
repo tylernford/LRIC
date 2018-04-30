@@ -48,17 +48,25 @@ a {
 
 .btn {
 	@apply .font-semibold .inline-block .leading-none .no-underline .text-center .tracking-thin .uppercase;
-	
+	transition: all 150ms ease-in-out;
 	&.--small {
 		@apply .h-10 .px-9 .text-2xs;
 		padding-top: .9375rem;
 	}
+	
 	&.--medium {
 		@apply .h-10 .px-9 .text-1xs;
-		padding-top: 13.5px;
+		
+		&.--thin { padding-top: 13.5px }
+		
+		&.--solid { padding-top: 14.5px }
 	}
 }
-
+button.btn {
+	&.--medium {
+		padding-top: 1px
+	}
+}
 // Grow
 //
 .grow-old { 
