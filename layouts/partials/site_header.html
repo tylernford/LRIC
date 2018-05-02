@@ -16,7 +16,7 @@
         <ul class="flex justify-between list-reset text-1xs uppercase tracking-normal   sm:text-sm">
             <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
                 <a class="no-underline
-                    {{ if eq .Title "Home" }}
+                    {{ if .IsHome }}
                         text-yellow
                     {{ else }}
                         text-grey-dark
