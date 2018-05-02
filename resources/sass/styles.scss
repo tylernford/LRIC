@@ -56,10 +56,7 @@ a {
 	
 	&.--medium {
 		@apply .h-10 .px-9 .text-1xs;
-		
-		&.--thin { padding-top: 13.5px }
-		
-		&.--solid { padding-top: 14.5px }
+		padding-top: 14.5px
 	}
 }
 button.btn {
@@ -103,7 +100,7 @@ button.btn {
 	position: absolute;
 	width:100%
 }
-.show_bio_btn:focus {
+.show_bio_btn:focus, .hide_bio_btn:focus {
 	outline: none
 }
 
@@ -135,23 +132,8 @@ button.btn {
 .css__bio-shown::-webkit-scrollbar { 
     display: none; 
 }
-/*
-.founder-bio.css-hide_bio section {
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-
-.founder-bio {
-	visibility: visible;
-	opacity: 1;
-	transition: opacity 1s;
-}
 /* END BIO SHOWN */
 
-
-/* OPPORTUNITY ROOTED I: */
-//background-image: linear-gradient(90deg, #FFDB8F 1%, #EDC879 14%, #EDC879 26%, #E0AB65 52%, #EDBC77 67%, #E3B66D 84%, #E0B370 100%);
 
 .heading-gradient {
 	background:    linear-gradient(-90deg, #FFDB8F 1%, #EDC879 14%, #EDC879 26%, #E0AB65 52%, #EDBC77 67%, #E3B66D 84%, #E0B370 100%);

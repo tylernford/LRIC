@@ -225,13 +225,6 @@ a {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
   font-size: .75rem;
-}
-
-.btn.\--medium.\--thin {
-  padding-top: 13.5px;
-}
-
-.btn.\--medium.\--solid {
   padding-top: 14.5px;
 }
 
@@ -24605,7 +24598,8 @@ button,
   width: 100%;
 }
 
-.show_bio_btn:focus {
+.show_bio_btn:focus,
+.hide_bio_btn:focus {
   outline: none;
 }
 
@@ -24651,21 +24645,7 @@ button,
   display: none;
 }
 
-/*
-.founder-bio.css-hide_bio section {
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-
-.founder-bio {
-	visibility: visible;
-	opacity: 1;
-	transition: opacity 1s;
-}
 /* END BIO SHOWN */
-
-/* OPPORTUNITY ROOTED I: */
 
 .heading-gradient {
   background: -webkit-gradient(linear, right top, left top, color-stop(1%, #ffdb8f), color-stop(14%, #edc879), color-stop(26%, #edc879), color-stop(52%, #e0ab65), color-stop(67%, #edbc77), color-stop(84%, #e3b66d), to(#e0b370));
