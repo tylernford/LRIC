@@ -51,7 +51,7 @@ a {
 	transition: all 150ms ease-in-out;
 	&.--small {
 		@apply .h-10 .px-9 .text-2xs;
-		padding-top: .9375rem;
+		padding-top: 15.5px;
 	}
 	
 	&.--medium {
