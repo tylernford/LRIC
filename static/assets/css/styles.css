@@ -2152,6 +2152,10 @@ button,
   margin: 3.25rem;
 }
 
+.m-14 {
+  margin: 3.5rem;
+}
+
 .m-15 {
   margin: 3.75rem;
 }
@@ -2340,6 +2344,16 @@ button,
 .mx-13 {
   margin-left: 3.25rem;
   margin-right: 3.25rem;
+}
+
+.my-14 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
 .my-15 {
@@ -2698,6 +2712,22 @@ button,
 
 .ml-13 {
   margin-left: 3.25rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
+.ml-14 {
+  margin-left: 3.5rem;
 }
 
 .mt-15 {
@@ -3466,6 +3496,14 @@ button,
   padding: 8.75rem;
 }
 
+.p-37 {
+  padding: 9.25rem;
+}
+
+.p-38 {
+  padding: 9.5rem;
+}
+
 .p-px {
   padding: 1px;
 }
@@ -3718,6 +3756,26 @@ button,
 .px-35 {
   padding-left: 8.75rem;
   padding-right: 8.75rem;
+}
+
+.py-37 {
+  padding-top: 9.25rem;
+  padding-bottom: 9.25rem;
+}
+
+.px-37 {
+  padding-left: 9.25rem;
+  padding-right: 9.25rem;
+}
+
+.py-38 {
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+}
+
+.px-38 {
+  padding-left: 9.5rem;
+  padding-right: 9.5rem;
 }
 
 .py-px {
@@ -4128,6 +4186,38 @@ button,
 
 .pl-35 {
   padding-left: 8.75rem;
+}
+
+.pt-37 {
+  padding-top: 9.25rem;
+}
+
+.pr-37 {
+  padding-right: 9.25rem;
+}
+
+.pb-37 {
+  padding-bottom: 9.25rem;
+}
+
+.pl-37 {
+  padding-left: 9.25rem;
+}
+
+.pt-38 {
+  padding-top: 9.5rem;
+}
+
+.pr-38 {
+  padding-right: 9.5rem;
+}
+
+.pb-38 {
+  padding-bottom: 9.5rem;
+}
+
+.pl-38 {
+  padding-left: 9.5rem;
 }
 
 .pt-px {
@@ -6007,6 +6097,10 @@ button,
     margin: 3.25rem;
   }
 
+  .xs\:m-14 {
+    margin: 3.5rem;
+  }
+
   .xs\:m-15 {
     margin: 3.75rem;
   }
@@ -6195,6 +6289,16 @@ button,
   .xs\:mx-13 {
     margin-left: 3.25rem;
     margin-right: 3.25rem;
+  }
+
+  .xs\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .xs\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .xs\:my-15 {
@@ -6553,6 +6657,22 @@ button,
 
   .xs\:ml-13 {
     margin-left: 3.25rem;
+  }
+
+  .xs\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .xs\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .xs\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .xs\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .xs\:mt-15 {
@@ -7321,6 +7441,14 @@ button,
     padding: 8.75rem;
   }
 
+  .xs\:p-37 {
+    padding: 9.25rem;
+  }
+
+  .xs\:p-38 {
+    padding: 9.5rem;
+  }
+
   .xs\:p-px {
     padding: 1px;
   }
@@ -7573,6 +7701,26 @@ button,
   .xs\:px-35 {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
+  }
+
+  .xs\:py-37 {
+    padding-top: 9.25rem;
+    padding-bottom: 9.25rem;
+  }
+
+  .xs\:px-37 {
+    padding-left: 9.25rem;
+    padding-right: 9.25rem;
+  }
+
+  .xs\:py-38 {
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+  }
+
+  .xs\:px-38 {
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
   }
 
   .xs\:py-px {
@@ -7983,6 +8131,38 @@ button,
 
   .xs\:pl-35 {
     padding-left: 8.75rem;
+  }
+
+  .xs\:pt-37 {
+    padding-top: 9.25rem;
+  }
+
+  .xs\:pr-37 {
+    padding-right: 9.25rem;
+  }
+
+  .xs\:pb-37 {
+    padding-bottom: 9.25rem;
+  }
+
+  .xs\:pl-37 {
+    padding-left: 9.25rem;
+  }
+
+  .xs\:pt-38 {
+    padding-top: 9.5rem;
+  }
+
+  .xs\:pr-38 {
+    padding-right: 9.5rem;
+  }
+
+  .xs\:pb-38 {
+    padding-bottom: 9.5rem;
+  }
+
+  .xs\:pl-38 {
+    padding-left: 9.5rem;
   }
 
   .xs\:pt-px {
@@ -9855,6 +10035,10 @@ button,
     margin: 3.25rem;
   }
 
+  .sm\:m-14 {
+    margin: 3.5rem;
+  }
+
   .sm\:m-15 {
     margin: 3.75rem;
   }
@@ -10043,6 +10227,16 @@ button,
   .sm\:mx-13 {
     margin-left: 3.25rem;
     margin-right: 3.25rem;
+  }
+
+  .sm\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .sm\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .sm\:my-15 {
@@ -10401,6 +10595,22 @@ button,
 
   .sm\:ml-13 {
     margin-left: 3.25rem;
+  }
+
+  .sm\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .sm\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .sm\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .sm\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .sm\:mt-15 {
@@ -11169,6 +11379,14 @@ button,
     padding: 8.75rem;
   }
 
+  .sm\:p-37 {
+    padding: 9.25rem;
+  }
+
+  .sm\:p-38 {
+    padding: 9.5rem;
+  }
+
   .sm\:p-px {
     padding: 1px;
   }
@@ -11421,6 +11639,26 @@ button,
   .sm\:px-35 {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
+  }
+
+  .sm\:py-37 {
+    padding-top: 9.25rem;
+    padding-bottom: 9.25rem;
+  }
+
+  .sm\:px-37 {
+    padding-left: 9.25rem;
+    padding-right: 9.25rem;
+  }
+
+  .sm\:py-38 {
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+  }
+
+  .sm\:px-38 {
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
   }
 
   .sm\:py-px {
@@ -11831,6 +12069,38 @@ button,
 
   .sm\:pl-35 {
     padding-left: 8.75rem;
+  }
+
+  .sm\:pt-37 {
+    padding-top: 9.25rem;
+  }
+
+  .sm\:pr-37 {
+    padding-right: 9.25rem;
+  }
+
+  .sm\:pb-37 {
+    padding-bottom: 9.25rem;
+  }
+
+  .sm\:pl-37 {
+    padding-left: 9.25rem;
+  }
+
+  .sm\:pt-38 {
+    padding-top: 9.5rem;
+  }
+
+  .sm\:pr-38 {
+    padding-right: 9.5rem;
+  }
+
+  .sm\:pb-38 {
+    padding-bottom: 9.5rem;
+  }
+
+  .sm\:pl-38 {
+    padding-left: 9.5rem;
   }
 
   .sm\:pt-px {
@@ -13703,6 +13973,10 @@ button,
     margin: 3.25rem;
   }
 
+  .md\:m-14 {
+    margin: 3.5rem;
+  }
+
   .md\:m-15 {
     margin: 3.75rem;
   }
@@ -13891,6 +14165,16 @@ button,
   .md\:mx-13 {
     margin-left: 3.25rem;
     margin-right: 3.25rem;
+  }
+
+  .md\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .md\:my-15 {
@@ -14249,6 +14533,22 @@ button,
 
   .md\:ml-13 {
     margin-left: 3.25rem;
+  }
+
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .md\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .md\:mt-15 {
@@ -15017,6 +15317,14 @@ button,
     padding: 8.75rem;
   }
 
+  .md\:p-37 {
+    padding: 9.25rem;
+  }
+
+  .md\:p-38 {
+    padding: 9.5rem;
+  }
+
   .md\:p-px {
     padding: 1px;
   }
@@ -15269,6 +15577,26 @@ button,
   .md\:px-35 {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
+  }
+
+  .md\:py-37 {
+    padding-top: 9.25rem;
+    padding-bottom: 9.25rem;
+  }
+
+  .md\:px-37 {
+    padding-left: 9.25rem;
+    padding-right: 9.25rem;
+  }
+
+  .md\:py-38 {
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+  }
+
+  .md\:px-38 {
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
   }
 
   .md\:py-px {
@@ -15679,6 +16007,38 @@ button,
 
   .md\:pl-35 {
     padding-left: 8.75rem;
+  }
+
+  .md\:pt-37 {
+    padding-top: 9.25rem;
+  }
+
+  .md\:pr-37 {
+    padding-right: 9.25rem;
+  }
+
+  .md\:pb-37 {
+    padding-bottom: 9.25rem;
+  }
+
+  .md\:pl-37 {
+    padding-left: 9.25rem;
+  }
+
+  .md\:pt-38 {
+    padding-top: 9.5rem;
+  }
+
+  .md\:pr-38 {
+    padding-right: 9.5rem;
+  }
+
+  .md\:pb-38 {
+    padding-bottom: 9.5rem;
+  }
+
+  .md\:pl-38 {
+    padding-left: 9.5rem;
   }
 
   .md\:pt-px {
@@ -17551,6 +17911,10 @@ button,
     margin: 3.25rem;
   }
 
+  .lg\:m-14 {
+    margin: 3.5rem;
+  }
+
   .lg\:m-15 {
     margin: 3.75rem;
   }
@@ -17739,6 +18103,16 @@ button,
   .lg\:mx-13 {
     margin-left: 3.25rem;
     margin-right: 3.25rem;
+  }
+
+  .lg\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .lg\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .lg\:my-15 {
@@ -18097,6 +18471,22 @@ button,
 
   .lg\:ml-13 {
     margin-left: 3.25rem;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .lg\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .lg\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .lg\:mt-15 {
@@ -18865,6 +19255,14 @@ button,
     padding: 8.75rem;
   }
 
+  .lg\:p-37 {
+    padding: 9.25rem;
+  }
+
+  .lg\:p-38 {
+    padding: 9.5rem;
+  }
+
   .lg\:p-px {
     padding: 1px;
   }
@@ -19117,6 +19515,26 @@ button,
   .lg\:px-35 {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
+  }
+
+  .lg\:py-37 {
+    padding-top: 9.25rem;
+    padding-bottom: 9.25rem;
+  }
+
+  .lg\:px-37 {
+    padding-left: 9.25rem;
+    padding-right: 9.25rem;
+  }
+
+  .lg\:py-38 {
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+  }
+
+  .lg\:px-38 {
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
   }
 
   .lg\:py-px {
@@ -19527,6 +19945,38 @@ button,
 
   .lg\:pl-35 {
     padding-left: 8.75rem;
+  }
+
+  .lg\:pt-37 {
+    padding-top: 9.25rem;
+  }
+
+  .lg\:pr-37 {
+    padding-right: 9.25rem;
+  }
+
+  .lg\:pb-37 {
+    padding-bottom: 9.25rem;
+  }
+
+  .lg\:pl-37 {
+    padding-left: 9.25rem;
+  }
+
+  .lg\:pt-38 {
+    padding-top: 9.5rem;
+  }
+
+  .lg\:pr-38 {
+    padding-right: 9.5rem;
+  }
+
+  .lg\:pb-38 {
+    padding-bottom: 9.5rem;
+  }
+
+  .lg\:pl-38 {
+    padding-left: 9.5rem;
   }
 
   .lg\:pt-px {
@@ -21399,6 +21849,10 @@ button,
     margin: 3.25rem;
   }
 
+  .xl\:m-14 {
+    margin: 3.5rem;
+  }
+
   .xl\:m-15 {
     margin: 3.75rem;
   }
@@ -21587,6 +22041,16 @@ button,
   .xl\:mx-13 {
     margin-left: 3.25rem;
     margin-right: 3.25rem;
+  }
+
+  .xl\:my-14 {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .xl\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
   }
 
   .xl\:my-15 {
@@ -21945,6 +22409,22 @@ button,
 
   .xl\:ml-13 {
     margin-left: 3.25rem;
+  }
+
+  .xl\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .xl\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .xl\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .xl\:ml-14 {
+    margin-left: 3.5rem;
   }
 
   .xl\:mt-15 {
@@ -22713,6 +23193,14 @@ button,
     padding: 8.75rem;
   }
 
+  .xl\:p-37 {
+    padding: 9.25rem;
+  }
+
+  .xl\:p-38 {
+    padding: 9.5rem;
+  }
+
   .xl\:p-px {
     padding: 1px;
   }
@@ -22965,6 +23453,26 @@ button,
   .xl\:px-35 {
     padding-left: 8.75rem;
     padding-right: 8.75rem;
+  }
+
+  .xl\:py-37 {
+    padding-top: 9.25rem;
+    padding-bottom: 9.25rem;
+  }
+
+  .xl\:px-37 {
+    padding-left: 9.25rem;
+    padding-right: 9.25rem;
+  }
+
+  .xl\:py-38 {
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+  }
+
+  .xl\:px-38 {
+    padding-left: 9.5rem;
+    padding-right: 9.5rem;
   }
 
   .xl\:py-px {
@@ -23375,6 +23883,38 @@ button,
 
   .xl\:pl-35 {
     padding-left: 8.75rem;
+  }
+
+  .xl\:pt-37 {
+    padding-top: 9.25rem;
+  }
+
+  .xl\:pr-37 {
+    padding-right: 9.25rem;
+  }
+
+  .xl\:pb-37 {
+    padding-bottom: 9.25rem;
+  }
+
+  .xl\:pl-37 {
+    padding-left: 9.25rem;
+  }
+
+  .xl\:pt-38 {
+    padding-top: 9.5rem;
+  }
+
+  .xl\:pr-38 {
+    padding-right: 9.5rem;
+  }
+
+  .xl\:pb-38 {
+    padding-bottom: 9.5rem;
+  }
+
+  .xl\:pl-38 {
+    padding-left: 9.5rem;
   }
 
   .xl\:pt-px {
@@ -24056,6 +24596,74 @@ button,
   font-family: 'Lucida Grande';
   margin-left: .25rem;
 }
+
+/*   BIO SHOWN   */
+
+.css__bio-shown {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.show_bio_btn:focus {
+  outline: none;
+}
+
+/* 5 */
+
+.founder-bio.css-hide_bio {
+  visibility: hidden;
+  opacity: 1;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+}
+
+.founder-bio {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.founder-bio.css-hide_bio section {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(.75);
+          transform: scale(.75);
+  -webkit-transition: opacity .15s, visibility 0s .15s, -webkit-transform .15s;
+  transition: opacity .15s, visibility 0s .15s, -webkit-transform .15s;
+  transition: transform .15s, opacity .15s, visibility 0s .15s;
+  transition: transform .15s, opacity .15s, visibility 0s .15s, -webkit-transform .15s;
+}
+
+.founder-bio section {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity .75s, -webkit-transform .75s;
+  transition: opacity .75s, -webkit-transform .75s;
+  transition: transform .75s, opacity .75s;
+  transition: transform .75s, opacity .75s, -webkit-transform .75s;
+}
+
+.css__bio-shown::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+.founder-bio.css-hide_bio section {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.founder-bio {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 1s;
+}
+/* END BIO SHOWN */
 
 /* OPPORTUNITY ROOTED I: */
 
