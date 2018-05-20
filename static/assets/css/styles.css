@@ -25705,6 +25705,7 @@ a {
 .img.is16by9 img,
 .img.is2by1 img,
 .img.is552by716 img {
+  position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
