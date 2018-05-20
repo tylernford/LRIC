@@ -2,6 +2,11 @@
 // LRIC
 //
 
+@tailwind preflight;
+@tailwind utilities;
+@tailwind screens;
+
+
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
 	body {
 		-moz-osx-font-smoothing: grayscale;
@@ -9,9 +14,7 @@
 	}
 }
 
-a {
-  transition: color 150ms ease-in-out, background 150ms ease-in-out
-}
+a { transition: color 150ms ease-in-out, background 150ms ease-in-out }
 
 .element-invisible {
     position: absolute !important;
@@ -43,7 +46,6 @@ a {
 }
 
 @import 'fonts';
-@import 'text-crop';
 @import 'images';
 
 .btn {
@@ -77,34 +79,9 @@ button.btn {
 		padding-top: 2px
 	}
 }
-// Grow
-//
-.grow-old { 
-    backface-visibility: hidden; 
-    transform: translateZ( 0 );
-    transition: transform .25s ease-out
-}
-.grow-old:hover { transform: scale( 1.05 );transition: transform .25s ease-in }
-
-.grow-old:hover .grow-old:focus { transform: none }
-.grow {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden; 
-	-webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
-.grow:hover, .grow:focus { -webkit-transform: scale( 1.05 ); transform: scale( 1.05 ); }
-.grow:active { -webkit-transform: scale( .90 ); transform: scale( .90 ); }
-@tailwind preflight;
-@tailwind utilities;
-@tailwind screens;
 
 
 
-.test-link-style:hover::after {
-	content: '→';
-	font-family:'Lucida Grande';
-	margin-left: .25rem
-}
 
 
 /*   BIO SHOWN   */
@@ -156,4 +133,26 @@ button.btn {
 	&.--one {
 		max-width:22.22222222222222em
 	}
+	
+	/*   No Background in Internet Explorer   */
+	@media screen and (min-width:0\0) { 
+	    background: none
+	}
+	/* End No Background in Internet Explorer */
+}
+
+
+
+
+
+@media screen and (min-width:0\0) { 
+	@media (min-width: 992px) {
+		.lg\:ie-mt-8 { margin-top: 2rem }
+	}
+}
+
+
+@media (min-width: 608px) {
+	.c38\:flex-no-wrap { flex-wrap: nowrap }
+	.c38\:mb-0 { margin-bottom: 0 }
 }
