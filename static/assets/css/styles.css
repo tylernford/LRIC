@@ -2100,8 +2100,16 @@ button,
   height: 16rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-106 {
   height: 26.5rem;
+}
+
+.h-123 {
+  height: 30.75rem;
 }
 
 .h-auto {
@@ -2178,6 +2186,10 @@ button,
 
 .m-10 {
   margin: 2.5rem;
+}
+
+.m-11 {
+  margin: 2.75rem;
 }
 
 .m-12 {
@@ -2360,6 +2372,16 @@ button,
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.my-11 {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.mx-11 {
+  margin-left: 2.75rem;
+  margin-right: 2.75rem;
 }
 
 .my-12 {
@@ -2716,6 +2738,22 @@ button,
 
 .ml-10 {
   margin-left: 2.5rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mr-11 {
+  margin-right: 2.75rem;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
+}
+
+.ml-11 {
+  margin-left: 2.75rem;
 }
 
 .mt-12 {
@@ -3530,6 +3568,14 @@ button,
   padding: 4rem;
 }
 
+.p-17 {
+  padding: 4.25rem;
+}
+
+.p-18 {
+  padding: 4.5rem;
+}
+
 .p-19 {
   padding: 4.75rem;
 }
@@ -3750,6 +3796,26 @@ button,
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.py-17 {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+.px-17 {
+  padding-left: 4.25rem;
+  padding-right: 4.25rem;
+}
+
+.py-18 {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.px-18 {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
 }
 
 .py-19 {
@@ -4152,6 +4218,38 @@ button,
 
 .pl-16 {
   padding-left: 4rem;
+}
+
+.pt-17 {
+  padding-top: 4.25rem;
+}
+
+.pr-17 {
+  padding-right: 4.25rem;
+}
+
+.pb-17 {
+  padding-bottom: 4.25rem;
+}
+
+.pl-17 {
+  padding-left: 4.25rem;
+}
+
+.pt-18 {
+  padding-top: 4.5rem;
+}
+
+.pr-18 {
+  padding-right: 4.5rem;
+}
+
+.pb-18 {
+  padding-bottom: 4.5rem;
+}
+
+.pl-18 {
+  padding-left: 4.5rem;
 }
 
 .pt-19 {
@@ -6163,8 +6261,16 @@ button,
     height: 16rem;
   }
 
+  .xs\:h-80 {
+    height: 20rem;
+  }
+
   .xs\:h-106 {
     height: 26.5rem;
+  }
+
+  .xs\:h-123 {
+    height: 30.75rem;
   }
 
   .xs\:h-auto {
@@ -6241,6 +6347,10 @@ button,
 
   .xs\:m-10 {
     margin: 2.5rem;
+  }
+
+  .xs\:m-11 {
+    margin: 2.75rem;
   }
 
   .xs\:m-12 {
@@ -6423,6 +6533,16 @@ button,
   .xs\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .xs\:my-11 {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .xs\:mx-11 {
+    margin-left: 2.75rem;
+    margin-right: 2.75rem;
   }
 
   .xs\:my-12 {
@@ -6779,6 +6899,22 @@ button,
 
   .xs\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .xs\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .xs\:mr-11 {
+    margin-right: 2.75rem;
+  }
+
+  .xs\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
+  .xs\:ml-11 {
+    margin-left: 2.75rem;
   }
 
   .xs\:mt-12 {
@@ -7593,6 +7729,14 @@ button,
     padding: 4rem;
   }
 
+  .xs\:p-17 {
+    padding: 4.25rem;
+  }
+
+  .xs\:p-18 {
+    padding: 4.5rem;
+  }
+
   .xs\:p-19 {
     padding: 4.75rem;
   }
@@ -7813,6 +7957,26 @@ button,
   .xs\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .xs\:py-17 {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+
+  .xs\:px-17 {
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+  }
+
+  .xs\:py-18 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .xs\:px-18 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .xs\:py-19 {
@@ -8215,6 +8379,38 @@ button,
 
   .xs\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .xs\:pt-17 {
+    padding-top: 4.25rem;
+  }
+
+  .xs\:pr-17 {
+    padding-right: 4.25rem;
+  }
+
+  .xs\:pb-17 {
+    padding-bottom: 4.25rem;
+  }
+
+  .xs\:pl-17 {
+    padding-left: 4.25rem;
+  }
+
+  .xs\:pt-18 {
+    padding-top: 4.5rem;
+  }
+
+  .xs\:pr-18 {
+    padding-right: 4.5rem;
+  }
+
+  .xs\:pb-18 {
+    padding-bottom: 4.5rem;
+  }
+
+  .xs\:pl-18 {
+    padding-left: 4.5rem;
   }
 
   .xs\:pt-19 {
@@ -10219,8 +10415,16 @@ button,
     height: 16rem;
   }
 
+  .sm\:h-80 {
+    height: 20rem;
+  }
+
   .sm\:h-106 {
     height: 26.5rem;
+  }
+
+  .sm\:h-123 {
+    height: 30.75rem;
   }
 
   .sm\:h-auto {
@@ -10297,6 +10501,10 @@ button,
 
   .sm\:m-10 {
     margin: 2.5rem;
+  }
+
+  .sm\:m-11 {
+    margin: 2.75rem;
   }
 
   .sm\:m-12 {
@@ -10479,6 +10687,16 @@ button,
   .sm\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .sm\:my-11 {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .sm\:mx-11 {
+    margin-left: 2.75rem;
+    margin-right: 2.75rem;
   }
 
   .sm\:my-12 {
@@ -10835,6 +11053,22 @@ button,
 
   .sm\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .sm\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .sm\:mr-11 {
+    margin-right: 2.75rem;
+  }
+
+  .sm\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
+  .sm\:ml-11 {
+    margin-left: 2.75rem;
   }
 
   .sm\:mt-12 {
@@ -11649,6 +11883,14 @@ button,
     padding: 4rem;
   }
 
+  .sm\:p-17 {
+    padding: 4.25rem;
+  }
+
+  .sm\:p-18 {
+    padding: 4.5rem;
+  }
+
   .sm\:p-19 {
     padding: 4.75rem;
   }
@@ -11869,6 +12111,26 @@ button,
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .sm\:py-17 {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+
+  .sm\:px-17 {
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+  }
+
+  .sm\:py-18 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .sm\:px-18 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .sm\:py-19 {
@@ -12271,6 +12533,38 @@ button,
 
   .sm\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .sm\:pt-17 {
+    padding-top: 4.25rem;
+  }
+
+  .sm\:pr-17 {
+    padding-right: 4.25rem;
+  }
+
+  .sm\:pb-17 {
+    padding-bottom: 4.25rem;
+  }
+
+  .sm\:pl-17 {
+    padding-left: 4.25rem;
+  }
+
+  .sm\:pt-18 {
+    padding-top: 4.5rem;
+  }
+
+  .sm\:pr-18 {
+    padding-right: 4.5rem;
+  }
+
+  .sm\:pb-18 {
+    padding-bottom: 4.5rem;
+  }
+
+  .sm\:pl-18 {
+    padding-left: 4.5rem;
   }
 
   .sm\:pt-19 {
@@ -14275,8 +14569,16 @@ button,
     height: 16rem;
   }
 
+  .md\:h-80 {
+    height: 20rem;
+  }
+
   .md\:h-106 {
     height: 26.5rem;
+  }
+
+  .md\:h-123 {
+    height: 30.75rem;
   }
 
   .md\:h-auto {
@@ -14353,6 +14655,10 @@ button,
 
   .md\:m-10 {
     margin: 2.5rem;
+  }
+
+  .md\:m-11 {
+    margin: 2.75rem;
   }
 
   .md\:m-12 {
@@ -14535,6 +14841,16 @@ button,
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .md\:my-11 {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .md\:mx-11 {
+    margin-left: 2.75rem;
+    margin-right: 2.75rem;
   }
 
   .md\:my-12 {
@@ -14891,6 +15207,22 @@ button,
 
   .md\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .md\:mr-11 {
+    margin-right: 2.75rem;
+  }
+
+  .md\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
+  .md\:ml-11 {
+    margin-left: 2.75rem;
   }
 
   .md\:mt-12 {
@@ -15705,6 +16037,14 @@ button,
     padding: 4rem;
   }
 
+  .md\:p-17 {
+    padding: 4.25rem;
+  }
+
+  .md\:p-18 {
+    padding: 4.5rem;
+  }
+
   .md\:p-19 {
     padding: 4.75rem;
   }
@@ -15925,6 +16265,26 @@ button,
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .md\:py-17 {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+
+  .md\:px-17 {
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+  }
+
+  .md\:py-18 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .md\:px-18 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .md\:py-19 {
@@ -16327,6 +16687,38 @@ button,
 
   .md\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .md\:pt-17 {
+    padding-top: 4.25rem;
+  }
+
+  .md\:pr-17 {
+    padding-right: 4.25rem;
+  }
+
+  .md\:pb-17 {
+    padding-bottom: 4.25rem;
+  }
+
+  .md\:pl-17 {
+    padding-left: 4.25rem;
+  }
+
+  .md\:pt-18 {
+    padding-top: 4.5rem;
+  }
+
+  .md\:pr-18 {
+    padding-right: 4.5rem;
+  }
+
+  .md\:pb-18 {
+    padding-bottom: 4.5rem;
+  }
+
+  .md\:pl-18 {
+    padding-left: 4.5rem;
   }
 
   .md\:pt-19 {
@@ -18331,8 +18723,16 @@ button,
     height: 16rem;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
   .lg\:h-106 {
     height: 26.5rem;
+  }
+
+  .lg\:h-123 {
+    height: 30.75rem;
   }
 
   .lg\:h-auto {
@@ -18409,6 +18809,10 @@ button,
 
   .lg\:m-10 {
     margin: 2.5rem;
+  }
+
+  .lg\:m-11 {
+    margin: 2.75rem;
   }
 
   .lg\:m-12 {
@@ -18591,6 +18995,16 @@ button,
   .lg\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .lg\:my-11 {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .lg\:mx-11 {
+    margin-left: 2.75rem;
+    margin-right: 2.75rem;
   }
 
   .lg\:my-12 {
@@ -18947,6 +19361,22 @@ button,
 
   .lg\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .lg\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .lg\:mr-11 {
+    margin-right: 2.75rem;
+  }
+
+  .lg\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
+  .lg\:ml-11 {
+    margin-left: 2.75rem;
   }
 
   .lg\:mt-12 {
@@ -19761,6 +20191,14 @@ button,
     padding: 4rem;
   }
 
+  .lg\:p-17 {
+    padding: 4.25rem;
+  }
+
+  .lg\:p-18 {
+    padding: 4.5rem;
+  }
+
   .lg\:p-19 {
     padding: 4.75rem;
   }
@@ -19981,6 +20419,26 @@ button,
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:py-17 {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+
+  .lg\:px-17 {
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+  }
+
+  .lg\:py-18 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .lg\:px-18 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .lg\:py-19 {
@@ -20383,6 +20841,38 @@ button,
 
   .lg\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .lg\:pt-17 {
+    padding-top: 4.25rem;
+  }
+
+  .lg\:pr-17 {
+    padding-right: 4.25rem;
+  }
+
+  .lg\:pb-17 {
+    padding-bottom: 4.25rem;
+  }
+
+  .lg\:pl-17 {
+    padding-left: 4.25rem;
+  }
+
+  .lg\:pt-18 {
+    padding-top: 4.5rem;
+  }
+
+  .lg\:pr-18 {
+    padding-right: 4.5rem;
+  }
+
+  .lg\:pb-18 {
+    padding-bottom: 4.5rem;
+  }
+
+  .lg\:pl-18 {
+    padding-left: 4.5rem;
   }
 
   .lg\:pt-19 {
@@ -22387,8 +22877,16 @@ button,
     height: 16rem;
   }
 
+  .xl\:h-80 {
+    height: 20rem;
+  }
+
   .xl\:h-106 {
     height: 26.5rem;
+  }
+
+  .xl\:h-123 {
+    height: 30.75rem;
   }
 
   .xl\:h-auto {
@@ -22465,6 +22963,10 @@ button,
 
   .xl\:m-10 {
     margin: 2.5rem;
+  }
+
+  .xl\:m-11 {
+    margin: 2.75rem;
   }
 
   .xl\:m-12 {
@@ -22647,6 +23149,16 @@ button,
   .xl\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .xl\:my-11 {
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .xl\:mx-11 {
+    margin-left: 2.75rem;
+    margin-right: 2.75rem;
   }
 
   .xl\:my-12 {
@@ -23003,6 +23515,22 @@ button,
 
   .xl\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .xl\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .xl\:mr-11 {
+    margin-right: 2.75rem;
+  }
+
+  .xl\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
+  .xl\:ml-11 {
+    margin-left: 2.75rem;
   }
 
   .xl\:mt-12 {
@@ -23817,6 +24345,14 @@ button,
     padding: 4rem;
   }
 
+  .xl\:p-17 {
+    padding: 4.25rem;
+  }
+
+  .xl\:p-18 {
+    padding: 4.5rem;
+  }
+
   .xl\:p-19 {
     padding: 4.75rem;
   }
@@ -24037,6 +24573,26 @@ button,
   .xl\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .xl\:py-17 {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+
+  .xl\:px-17 {
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
+  }
+
+  .xl\:py-18 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .xl\:px-18 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
 
   .xl\:py-19 {
@@ -24439,6 +24995,38 @@ button,
 
   .xl\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .xl\:pt-17 {
+    padding-top: 4.25rem;
+  }
+
+  .xl\:pr-17 {
+    padding-right: 4.25rem;
+  }
+
+  .xl\:pb-17 {
+    padding-bottom: 4.25rem;
+  }
+
+  .xl\:pl-17 {
+    padding-left: 4.25rem;
+  }
+
+  .xl\:pt-18 {
+    padding-top: 4.5rem;
+  }
+
+  .xl\:pr-18 {
+    padding-right: 4.5rem;
+  }
+
+  .xl\:pb-18 {
+    padding-bottom: 4.5rem;
+  }
+
+  .xl\:pl-18 {
+    padding-left: 4.5rem;
   }
 
   .xl\:pt-19 {
