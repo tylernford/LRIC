@@ -19,7 +19,7 @@
     overflow: hidden;
     
     img {
-    	@apply .h-full .w-full .pin-t .pin-l;
+    	@apply .absolute .h-full .w-full .pin-t .pin-l;
 		object-fit: cover;
     }
   }
