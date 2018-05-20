@@ -25889,6 +25889,10 @@ button.btn.\--large {
   max-width: 22.22222222222222em;
 }
 
+.heading-gradient.\--two {
+  max-width: 11.11111111111111em;
+}
+
 @media screen and (min-width: 0\0) {
   .heading-gradient {
     background: none;
