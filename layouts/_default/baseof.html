@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full" lang="en">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>LRIC</title>
@@ -8,27 +8,19 @@
 
         <!-- Sitewide Styles -->
 		<link href="../../../assets/css/styles.css" rel="stylesheet">
-		<style>
-		@media (min-width: 608px) {
-			.thirty-eight-flex-no-wrap {
-				-ms-flex-wrap: nowrap;
-					flex-wrap: nowrap;
-			}
-			.thirty-eight-mb0 {
-				margin-bottom: 0
-			}
-		}
-		</style>
 	</head>
-	<body class="bg-white flex flex-col font-sans min-h-full text-black">
+	<body class="bg-white flex font-sans text-black">
 
-		<div class="flex-1">
-			{{ partial "site_header" . }}
-			
-			{{ block "main" . }}{{ end }}
+		<div class="w-full min-h-screen flex flex-col">
+				{{ partial "site_header" . }}
+				
+				<div class="flex-grow">
+					{{ block "main" . }}{{ end }}
+				</div>
+				
+				{{ partial "site_footer" . }}
 		</div>
 
-		{{ partial "site_footer" . }}
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script>
