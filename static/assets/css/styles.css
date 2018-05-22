@@ -25900,6 +25900,18 @@ button.btn.\--large {
   }
 }
 
+@media screen and (min-width: 0\0) {
+  #logo svg {
+    width: 9.625rem;
+  }
+}
+
+@media screen and (min-width: 0\0) and (min-width: 576px) {
+  #logo svg {
+    width: 11rem;
+  }
+}
+
 @media screen and (min-width: 0\0) and (min-width: 992px) {
   .lg\:ie-mt-8 {
     margin-top: 2rem;
