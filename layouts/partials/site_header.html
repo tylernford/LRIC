@@ -35,13 +35,8 @@
                 href="/about">About Us</a>
             </li>
             <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
-                <a class="no-underline
-                    {{ if eq .Title "Projects" }}
-                        text-yellow
-                    {{ else }}
-                        text-grey-dark
-                    {{end}}
-                    hover:text-yellow"
+                <a class="no-underline text-grey-dark hover:text-yellow
+                    {{if or (eq .Title "Projects") (eq .Title "Project")}}text-yellow{{ end }}"
                 href="/projects">Projects</a>
             </li>
             <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
