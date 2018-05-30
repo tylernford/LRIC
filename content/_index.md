@@ -20,8 +20,10 @@ capabilities:
   heading: Opportunity Rooted In Stability.
   capabilities:
   - title: Development
-    body: Our diversification, flexibility and patience allow us to lean into a market
-      when the conditions are ripe and lean out of a market when opportunities narrow.
+    body: |-
+      Our diversification, flexibility and patience allow us to lean into a market when the conditions are ripe and lean out of a market when opportunities narrow.
+
+      What what
   - title: Redevelopment
     body: Our diversification, flexibility and patience allow us to lean into a market
       when the conditions are ripe and lean out of a market when opportunities narrow.
