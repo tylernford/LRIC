@@ -17,6 +17,8 @@ fields:
     config:
       required: true
   - type: file
+    label: Photo
+    name: photo
   - type: field_group_list
     name: statistics
     label: Statistics
