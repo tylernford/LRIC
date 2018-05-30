@@ -17,6 +17,7 @@ about:
   - value: 3
     type: Partners
   undefined: "/uploads/placeholder_1.jpg"
+  photo: "/uploads/placeholder_1.jpg"
 capabilities:
   heading: Opportunity Rooted In Stability.
   capabilities:
