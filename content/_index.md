@@ -32,9 +32,10 @@ capabilities:
       when the conditions are ripe and lean out of a market when opportunities narrow.
 learn_more:
   heading: Why Is Texas Our Target Market?
-  body: It’s population is growing by more than 1000 people per day. The economy is
-    booming. Over the coming years some of the greatest opportunities will be in retail
-    investment and development.
+  body: |-
+    It’s population is growing by more than 1000 people per day. The economy is booming. Over the coming years some of the greatest opportunities will be in retail investment and development.
+
+    What what
   photo: "/uploads/placeholder_2.jpg"
 
 ---
