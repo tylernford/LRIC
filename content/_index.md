@@ -1,8 +1,6 @@
 ---
 title: Home
 type: page
-heading: We focus on development, redevelopment and investment in retail and shopping
-  center properties throughout texas and the south.
 about:
   heading: We focus on development, redevelopment and investment in retail and shopping
     center properties throughout Texas and the south.
@@ -16,7 +14,6 @@ about:
     type: Combined Partner Experience
   - value: 3
     type: Partners
-  undefined: "/uploads/placeholder_1.jpg"
   photo: "/uploads/placeholder_1.jpg"
 capabilities:
   heading: Opportunity Rooted In Stability.
