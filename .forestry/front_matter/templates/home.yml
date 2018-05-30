@@ -22,17 +22,17 @@ fields:
     label: Statistics
     fields:
     - type: text
-      name: value
-      label: Value
-      config:
-        required: true
-      description: e.g. '10', '2005', etc.
-    - type: text
       config:
         required: true
       label: Type
       name: type
       description: e.g. 'founded', 'partners', etc.
+    - type: text
+      name: value
+      label: Value
+      config:
+        required: true
+      description: e.g. '10', '2005', etc.
 - type: field_group
   label: Capabilities
   name: capabilities
