@@ -4,9 +4,10 @@ type: page
 about:
   heading: We focus on development, redevelopment and investment in retail and shopping
     center properties throughout Texas and the south.
-  body: The Texas population is growing by more than 1000 people per day. The economy
-    is booming. Over the coming years some of the greatest opportunities will be in
-    retail investment and development.
+  body: |-
+    The Texas population is growing by more than 1000 people per day. The economy is booming. Over the coming years some of the greatest opportunities will be in retail investment and development.
+
+    What what
   statistics:
   - value: 2005
     type: Founded
