@@ -1,0 +1,102 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: heading
+  label: Heading
+  config:
+    required: true
+- type: field_group
+  name: what_we_do
+  label: What We Do
+  fields:
+  - type: textarea
+    name: body
+    label: Body
+    config:
+      required: true
+  - type: file
+    name: photo
+    label: Photo
+- type: field_group_list
+  name: team_members
+  label: Team Members
+  fields:
+  - type: file
+    name: photo
+    label: Photo
+  - type: text
+    name: name
+    label: Name
+    config:
+      required: true
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: short_bio
+    label: Short Bio
+    description: A short one or two sentence bio
+    config:
+      required: false
+  - type: textarea
+    name: full_bio
+    label: Full Bio
+    config:
+      required: false
+  config:
+    labelField: name
+- type: field_group_list
+  name: statistics
+  label: Statistics
+  fields:
+  - type: text
+    name: type
+    label: Type
+    description: e.g. 'founded', 'partners', etc.
+    config:
+      required: true
+  - type: text
+    name: value
+    label: Value
+    description: e.g. '10', '2005', etc.
+    config:
+      required: true
+  config:
+    labelField: type
+- type: field_group
+  name: more_info
+  label: More Info
+  fields:
+  - type: file
+    name: photo
+    label: Photo
+  - type: field_group
+    name: section_one
+    label: Section One
+    fields:
+    - type: text
+      label: Heading
+      name: heading
+      config:
+        required: true
+    - type: textarea
+      name: body
+      label: Body
+      config:
+        required: true
+  - type: field_group
+    name: section_two
+    label: Section Two
+    fields:
+    - type: text
+      name: heading
+      label: Heading
+      config:
+        required: true
+    - type: textarea
+      name: section_two
+      label: Section Two
+      config:
+        required: true
