@@ -73,3 +73,5 @@ fields:
   - type: file
     label: Photo
     name: photo
+pages:
+- _index.md
