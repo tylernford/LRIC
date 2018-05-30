@@ -1,0 +1,75 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: field_group
+  name: about
+  label: About
+  fields:
+  - type: text
+    name: heading
+    label: Heading
+    config:
+      required: true
+  - type: textarea
+    name: body
+    label: Body
+    config:
+      required: true
+  - type: file
+  - type: field_group_list
+    name: statistics
+    label: Statistics
+    fields:
+    - type: text
+      name: value
+      label: Value
+      config:
+        required: true
+      description: e.g. '10', '2005', etc.
+    - type: text
+      config:
+        required: true
+      label: Type
+      name: type
+      description: e.g. 'founded', 'partners', etc.
+- type: field_group
+  label: Capabilities
+  name: capabilities
+  fields:
+  - type: text
+    name: heading
+    label: Heading
+    config:
+      required: true
+  - type: field_group_list
+    name: capabilities
+    label: Capabilities
+    fields:
+    - type: text
+      name: title
+      label: Title
+      config:
+        required: true
+    - type: textarea
+      name: body
+      label: Body
+      config:
+        required: true
+- type: field_group
+  name: learn_more
+  label: Learn More
+  fields:
+  - type: text
+    name: heading
+    label: Heading
+    config:
+      required: true
+  - type: textarea
+    name: body
+    label: Body
+    config:
+      required: true
+  - type: file
+    label: Photo
+    name: photo
