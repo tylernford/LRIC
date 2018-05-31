@@ -10,7 +10,7 @@ about:
   statistics:
   - value: 2005
     type: Founded
-  - value: 140+ yrs
+  - value: 140_+ yrs_
     type: Combined Partner Experience
   - value: 3
     type: Partners
