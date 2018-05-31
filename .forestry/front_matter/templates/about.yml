@@ -100,3 +100,5 @@ fields:
       label: Section Two
       config:
         required: true
+pages:
+- about.md
