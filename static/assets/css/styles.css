@@ -25821,6 +25821,16 @@ button.btn.\--large {
   padding-top: 2px;
 }
 
+.nested-mb-5 > p {
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  .sm\:nested-mb-10 > p {
+    margin-bottom: 2.5rem;
+  }
+}
+
 /*   BIO SHOWN   */
 
 .css__bio-shown {
