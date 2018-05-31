@@ -1,0 +1,54 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: field_group
+  name: lric
+  label: LRIC
+  description: General Contact Info
+  fields:
+  - type: text
+    name: email
+    label: Email
+    config:
+      required: true
+  - type: text
+    name: phone
+    label: Phone
+    config:
+      required: true
+  - type: field_group
+    name: address
+    label: Address
+    fields:
+    - type: text
+      label: Pt. 1
+      name: pt__1
+      config:
+        required: true
+      description: Street
+    - type: text
+      name: pt__2
+      label: Pt. 2
+      description: City, State, Zip
+      config:
+        required: true
+- type: field_group_list
+  label: Member Contact Info
+  name: member_contact_info
+  description: Individual Contact Info
+  fields:
+  - type: text
+    label: Name
+    name: name
+    config:
+      required: true
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    name: phone
+    label: Phone
+  - type: text
+    name: email
+    label: Email
