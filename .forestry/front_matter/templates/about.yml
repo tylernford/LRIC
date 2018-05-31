@@ -96,8 +96,8 @@ fields:
       config:
         required: true
     - type: textarea
-      name: section_two
-      label: Section Two
+      name: body
+      label: Body
       config:
         required: true
 pages:
