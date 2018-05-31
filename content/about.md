@@ -55,9 +55,9 @@ statistics:
 - type: Avg Occupancy
   value: 92%
 - type: Retail Sqft Developed
-  value: 42mil
+  value: 42_mil_
 - type: Closed Real Estate Debt
-  value: "$2bil"
+  value: "$2_bil_"
 more_info:
   section_one:
     heading: Is “Retail Is Dying”?
