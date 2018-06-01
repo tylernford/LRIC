@@ -13,6 +13,25 @@ fields:
     config:
       required: true
   - type: field_group
+    name: phone
+    label: Phone
+    fields:
+    - type: number
+      name: area_code
+      label: '1: Area Code'
+      config:
+        required: true
+    - type: number
+      name: prefix
+      label: '2: Prefix'
+      config:
+        required: true
+    - type: number
+      name: line_number
+      label: '3: Line Number'
+      config:
+        required: true
+  - type: field_group
     name: address
     label: Address
     fields:
