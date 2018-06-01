@@ -5,9 +5,6 @@ layout: contact
 lric:
   email: info@lricre.com
   phone:
-    '1': 214
-    '2': 307
-    '3': 1000
     1__area_code: 214
     2__prefix: 307
     3__line_number: 1000
@@ -18,20 +15,6 @@ member_contact_info:
 - name: Steve Lipscomb
   title: Founder
   phone:
-    '0': "("
-    '1': 2
-    '2': 1
-    '3': 4
-    '4': ")"
-    '5': " "
-    '6': 5
-    '7': 9
-    '8': 9
-    '9': "-"
-    '10': 9
-    '11': 8
-    '12': 2
-    '13': 0
     1__area_code: 214
     2__prefix: 599
     3__line_number: 9820
