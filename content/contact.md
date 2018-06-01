@@ -11,6 +11,9 @@ lric:
     1__area_code: 214
     2__prefix: 599
     3__line_number: 9820
+    area_code: 1
+    prefix: 1
+    line_number: 1
 member_contact_info:
 - name: Steve Lipscomb
   title: Founder
@@ -19,6 +22,9 @@ member_contact_info:
     1__area_code: 214
     2__prefix: 599
     3__line_number: 9820
+    area_code: 1
+    prefix: 1
+    line_number: 1
 - name: Tabb Neblett
   title: Founder
   email: tabbneblett@lricre.com
@@ -26,6 +32,9 @@ member_contact_info:
     1__area_code: 214
     2__prefix: 599
     3__line_number: 9820
+    line_number: 1
+    prefix: 1
+    area_code: 1
 - name: Austin Clinkscales
   title: Founder
   email: austinclinkscales@lricre.com
@@ -33,5 +42,8 @@ member_contact_info:
     1__area_code: 214
     2__prefix: 599
     3__line_number: 9820
+    line_number: 1
+    prefix: 1
+    area_code: 1
 
 ---
