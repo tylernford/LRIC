@@ -15,11 +15,23 @@ member_contact_info:
 - name: Steve Lipscomb
   title: Founder
   email: stevelipscomb@lricre.com
+  phone:
+    area_code: 214
+    prefix: 599
+    line_number: 9820
 - name: Tabb Neblett
   title: Founder
   email: tabbneblett@lricre.com
+  phone:
+    area_code: 214
+    prefix: 599
+    line_number: 9820
 - name: Austin Clinkscales
   title: Founder
   email: austinclinkscales@lricre.com
+  phone:
+    area_code: 214
+    prefix: 599
+    line_number: 9820
 
 ---
