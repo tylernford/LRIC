@@ -65,15 +65,15 @@ fields:
     label: Phone
     fields:
     - type: number
-      name: 1__area_code
+      name: area_code
       label: '1: Area Code'
       config:
         required: false
     - type: number
-      name: 2__prefix
+      name: prefix
       label: '2: Prefix'
     - type: number
-      name: 3__line_number
+      name: line_number
       label: '3: Line Number'
   - type: text
     name: email
