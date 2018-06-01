@@ -12,11 +12,23 @@ fields:
     label: Email
     config:
       required: true
-  - type: text
+  - type: field_group
     name: phone
     label: Phone
-    config:
-      required: true
+    fields:
+    - type: number
+      name: '1'
+      label: '1: Area Code'
+      config:
+        required: true
+    - type: number
+      name: '2'
+      label: '2: Prefix'
+      config:
+        required: true
+    - type: number
+      label: '3: Line Number'
+      name: '3'
   - type: field_group
     name: address
     label: Address
