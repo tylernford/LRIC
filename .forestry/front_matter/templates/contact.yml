@@ -60,6 +60,19 @@ fields:
   - type: text
     name: title
     label: Title
+  - type: field_group
+    name: phone
+    label: Phone
+    fields:
+    - type: number
+      name: area_code
+      label: '1: Area Code'
+    - type: number
+      name: prefix
+      label: '2: Prefix'
+    - type: number
+      name: line_number
+      label: '3: Line Number'
   - type: text
     name: email
     label: Email
