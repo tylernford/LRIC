@@ -1,5 +1,5 @@
 ---
-title: Contact: Test
+title: "Contact: Test"
 type: static
 layout: contact
 lric:
