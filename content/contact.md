@@ -1,5 +1,5 @@
 ---
-title: "Config File: Don't Edit"
+title: 'Config File: Don''t Edit'
 type: static
 layout: contact
 lric:
