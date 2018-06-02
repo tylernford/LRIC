@@ -78,3 +78,5 @@ fields:
     label: Email
 pages:
 - contact.md
+data_files:
+- Contact_Info.yml

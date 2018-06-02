@@ -1,2 +1,33 @@
 ---
 Address: hey
+lric:
+  email: info@lricre.com
+  phone:
+    area_code: '214'
+    prefix: '599'
+    line_number: '9820'
+  address:
+    pt__1: Dallas, Texas 75219
+    pt__2: 4311 Oak Lawn, Suite 370
+member_contact_info:
+- name: Steve Lipscomb
+  title: Founder
+  phone:
+    area_code: '214'
+    prefix: '599'
+    line_number: '9820'
+  email: stevelipscomb@lricre.com
+- name: Tabb Neblett
+  title: Founder
+  phone:
+    area_code: '214'
+    prefix: '599'
+    line_number: '9820'
+  email: tabbneblett@lricre.com
+- name: Austin Clinkscales
+  title: Founder
+  phone:
+    area_code: '214'
+    prefix: '599'
+    line_number: '9820'
+  email: austinclinkscales@lricre.com
