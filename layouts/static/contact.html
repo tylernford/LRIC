@@ -51,7 +51,7 @@
                   <div class="border border-yellow py-10 text-center   md:py-15">
                      <h3 class="font-semibold text-base tracking-thin uppercase   md:mb-1 md:text-lg">{{ .name }}</h3>
                      <h4 class="font-normal font-serif leading-loose mb-6 text-sm text-yellow tracking-thin">{{ .title }}</h4>
-                     <a class="block font-serif leading-tight mb-2 no-underline text-grey text-base   md:text-lg" href="tel:{{ .phone.area_code }}{{ .phone.prefix }}{{ .phone.line_number }}">({{ .phone.area_code }}) {{ .phone.prefix }}{{ .phone.line_number }}</a>
+                     <a class="block font-serif leading-tight mb-2 no-underline text-grey text-base   md:text-lg" href="tel:{{ .phone.area_code }}-{{ .phone.prefix }}-{{ .phone.line_number }}">({{ .phone.area_code }}) {{ .phone.prefix }}&ndash;{{ .phone.line_number }}</a>
                      <a class="block font-serif leading-tight no-underline text-grey text-base   md:text-lg" href="mailto:{{ .email }}">{{ .email }}</a>
                   </div>
                </div>
