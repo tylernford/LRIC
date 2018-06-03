@@ -13,24 +13,26 @@
             <div class="flex flex-wrap justify-center   sm:-mx-2   md:-mx-4">
                
                {{ range .Data.Pages }}
-                  <!--   Project   -->
-                  <div class="mb-12   xs:w-4/5   sm:mb-16 sm:px-2 sm:w-1/2   md:px-4   pt-25   sm:pt-19 md:pt-25">
-                      <div class="border border-yellow-light text-center">
-                         <div class="m-auto mb-6 -mt-25 w-3/4   sm:w-3/5       sm:-mt-19   md:-mt-25">
-                             <figure class="img is3by2   sm:is4by3   md:is3by2">
-                                  <img class="block w-full   absolute pin-t pin-l" src="../../../assets/img/bg-scraper.jpg">
-                             </figure>
-                         </div>
+                  {{ if ne .Title "Projects" }}
+                     <!--   Project   -->
+                     <div class="mb-12   xs:w-4/5   sm:mb-16 sm:px-2 sm:w-1/2   md:px-4   pt-25   sm:pt-19 md:pt-25">
+                         <div class="border border-yellow-light text-center">
+                            <div class="m-auto mb-6 -mt-25 w-3/4   sm:w-3/5       sm:-mt-19   md:-mt-25">
+                                <figure class="img is3by2   sm:is4by3   md:is3by2">
+                                     <img class="block w-full   absolute pin-t pin-l" src="../../../assets/img/bg-scraper.jpg">
+                                </figure>
+                            </div>
 
-                         <div class="px-6   md:px-10   lg:px-6   xl:px-8">
-                             <h4 class="font-semibold leading-tight mb-1 text-base tracking-normal uppercase">{{ .Title }}</h4>
-                             <h5 class="font-normal font-serif leading-loose mb-2 text-sm text-yellow tracking-thin">Fort Worth, Texas</h5>
-                             <p class="font-serif leading-loose mb-13 text-grey text-sm tracking-thin">A short sentence that summarizes key theme/important fact about the project. If there's one takeaway-what is it?</p>
-                             <a class="btn --medium   bg-white hover:bg-yellow mb-7 text-yellow hover:text-white" href="{{ .URL }}">More Info</a>
+                            <div class="px-6   md:px-10   lg:px-6   xl:px-8">
+                                <h4 class="font-semibold leading-tight mb-1 text-base tracking-normal uppercase">{{ .Title }}</h4>
+                                <h5 class="font-normal font-serif leading-loose mb-2 text-sm text-yellow tracking-thin">Fort Worth, Texas</h5>
+                                <p class="font-serif leading-loose mb-13 text-grey text-sm tracking-thin">A short sentence that summarizes key theme/important fact about the project. If there's one takeaway-what is it?</p>
+                                <a class="btn --medium   bg-white hover:bg-yellow mb-7 text-yellow hover:text-white" href="{{ .URL }}">More Info</a>
+                            </div>
                          </div>
-                      </div>
-                  </div>
-                  <!-- End Project -->
+                     </div>
+                     <!-- End Project -->
+                  {{ end }}
                {{ end }}
 
             </div>
