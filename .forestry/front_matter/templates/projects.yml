@@ -1,0 +1,9 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: heading
+  label: Projects Heading
+  config:
+    required: true
