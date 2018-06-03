@@ -7,3 +7,5 @@ fields:
   label: Projects Heading
   config:
     required: true
+pages:
+- projects/_index.md
