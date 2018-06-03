@@ -7,8 +7,8 @@ lric:
     prefix: '599'
     line_number: '9820'
   address:
-    pt__1: Dallas, Texas 75219
-    pt__2: 4311 Oak Lawn, Suite 370
+    pt__1: 4311 Oak Lawn, Suite 370
+    pt__2: Dallas, Texas 75219
 member_contact_info:
 - name: Steve Lipscomb
   title: Founder

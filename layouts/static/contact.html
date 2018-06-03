@@ -15,20 +15,20 @@
             <div class="flex flex-wrap">
                 <div class="mb-9 text-center w-full   sm:w-1/3   md:mb-11 md:pt-16">
                     {{ partial "svg/icons/email" . }}
-                    <h3 class="font-semibold leading-tight mb-4 mt-2 text-black text-base tracking-thin uppercase   sm:text-sm   md:mb-5 md:text-base   lg:text-lg">Email Us</h3>
-                    <a class="block font-serif leading-normal no-underline text-grey text-base   sm:text-sm   md:mb-15 md:text-base   lg:text-lg" href="mailto:info@lricre.com">{{ .Params.lric.email }}</a>
+                    <h3 class="font-semibold leading-tight mb-4 mt-2 text-base text-black tracking-thin uppercase   sm:text-sm   md:mb-5 md:text-base   lg:text-lg">Email Us</h3>
+                    <a class="font-serif inline-block leading-normal no-underline text-base text-grey hover:text-yellow   sm:text-sm   md:mb-15 md:text-base   lg:text-lg" href="mailto:info@lricre.com">{{ .Site.Data.Contact_Info.lric.email }}</a>
                 </div>
                 
                 <div class="mb-9 text-center w-full   sm:w-1/3   md:border-l md:border-r md:border-yellow-lighter md:mb-11 md:pt-16">
                     {{ partial "svg/icons/phone" . }}
-                    <h3 class="font-semibold leading-tight mb-4 mt-2 text-black text-base tracking-thin uppercase   sm:text-sm   md:mb-5 md:text-base   lg:text-lg">Call Us</h3>
-                    <a class="block font-serif leading-normal no-underline text-grey text-base   sm:text-sm   md:mb-15 md:text-base   lg:text-lg" href="tel:214-307-1000">{{ .Params.lric.phone.area_code }}.{{ .Params.lric.phone.prefix }}.{{ .Params.lric.phone.line_number }}</a>
+                    <h3 class="font-semibold leading-tight mb-4 mt-2 text-base text-black tracking-thin uppercase   sm:text-sm   md:mb-5 md:text-base   lg:text-lg">Call Us</h3>
+                    <a class="font-serif inline-block leading-normal no-underline text-base text-grey hover:text-yellow   sm:text-sm   md:mb-15 md:text-base   lg:text-lg" href="tel:214-307-1000">{{ .Site.Data.Contact_Info.lric.phone.area_code }}.{{ .Site.Data.Contact_Info.lric.phone.prefix }}.{{ .Site.Data.Contact_Info.lric.phone.line_number }}</a>
                 </div>
                                 
                 <div class="mb-9 text-center w-full   sm:w-1/3   md:mb-11 md:pt-16">
                     {{ partial "svg/icons/address" . }}
-                    <h3 class="font-semibold leading-tight mb-4 mt-2 text-black text-base tracking-thin uppercase   sm:text-sm   md:mb-5 md:text-base   lg:text-lg">Visit Us</h3>
-                    <a class="block font-serif leading-normal no-underline text-grey text-base   sm:text-sm   md:mb-15 md:text-base   lg:text-lg" href="">{{ .Params.lric.address.pt__1 }}<br> {{ .Params.lric.address.pt__2 }}</a>
+                    <h3 class="font-semibold leading-tight mb-4 mt-2 text-base text-black tracking-thin uppercase   sm:text-sm   md:mb-5 md:text-base   lg:text-lg">Visit Us</h3>
+                    <a class="font-serif inline-block leading-normal no-underline text-base text-grey hover:text-yellow   sm:text-sm   md:mb-15 md:text-base   lg:text-lg" href="">{{ .Site.Data.Contact_Info.lric.address.pt__1 }}<br> {{ .Site.Data.Contact_Info.lric.address.pt__2 }}</a>
                 </div>
             </div>
             <!-- End Contact Info -->
@@ -46,13 +46,16 @@
         <section class="m-auto max-w-3xl mb-16 px-6   xs:px-8   sm:mb-14 sm:px-18   md:mb-10 md:px-12   lg:mb-12 lg:px-9">
           <div class="flex flex-wrap justify-center   fsm:-mx-2   md:-mx-6   lg:-mx-5">
             
-            {{ range .Params.member_contact_info }}
+            {{ range .Site.Data.Contact_Info.member_contact_info }}
                <div class="mb-6 w-full    sm:mb-8   md:mb-12 md:px-6 md:w-1/2   lg:mb-10 lg:px-5 lg:w-1/3">
                   <div class="border border-yellow py-10 text-center   md:py-15">
                      <h3 class="font-semibold text-base tracking-thin uppercase   md:mb-1 md:text-lg">{{ .name }}</h3>
                      <h4 class="font-normal font-serif leading-loose mb-6 text-sm text-yellow tracking-thin">{{ .title }}</h4>
-                     <a class="block font-serif leading-tight mb-2 no-underline text-grey text-base   md:text-lg" href="tel:{{ .phone.area_code }}-{{ .phone.prefix }}-{{ .phone.line_number }}">({{ .phone.area_code }}) {{ .phone.prefix }}&ndash;{{ .phone.line_number }}</a>
-                     <a class="block font-serif leading-tight no-underline text-grey text-base   md:text-lg" href="mailto:{{ .email }}">{{ .email }}</a>
+                     
+                     <div class="flex flex-col items-center">
+                        <a class="font-serif leading-tight mb-2 no-underline text-base text-grey hover:text-yellow   md:text-lg" href="tel:{{ .phone.area_code }}-{{ .phone.prefix }}-{{ .phone.line_number }}">({{ .phone.area_code }}) {{ .phone.prefix }}&ndash;{{ .phone.line_number }}</a>
+                        <a class="font-serif leading-tight no-underline text-base text-grey hover:text-yellow   md:text-lg" href="mailto:{{ .email }}">{{ .email }}</a>
+                     </div>
                   </div>
                </div>
             {{ end }}
