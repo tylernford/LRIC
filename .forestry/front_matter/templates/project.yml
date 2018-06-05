@@ -1,0 +1,70 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: field_group
+  name: overview
+  label: Overview
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: text
+    name: location
+    label: Location
+    config:
+      required: true
+  - type: file
+    name: featured_photo
+    label: Featured Photo
+  - type: textarea
+    name: overview
+    label: Overview
+    description: A short sentence that summarizes key theme/important fact about the
+      project
+    config:
+      required: true
+- type: field_group
+  name: main
+  label: Main
+  fields:
+  - type: file
+    name: photo
+    label: Photo
+  - type: text
+    name: heading
+    label: Heading
+    config:
+      required: true
+  - type: textarea
+    name: body
+    label: Body
+    config:
+      required: true
+  - type: field_group_list
+    name: project_links
+    label: Project Links
+    fields:
+    - type: text
+      name: url
+      label: URL
+      config:
+        required: true
+  - type: field_group_list
+    name: statistics
+    label: Statistics
+    fields:
+    - type: text
+      label: Type
+      name: type
+      config:
+        required: true
+      description: e.g. 'founded', 'partners', etc.
+    - type: text
+      label: Value
+      name: value
+      description: e.g. '10', '2005', etc.
+      config:
+        required: true
