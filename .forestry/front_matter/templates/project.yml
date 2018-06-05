@@ -52,6 +52,17 @@ fields:
       label: URL
       config:
         required: true
+    - type: file
+      name: document
+      label: Document
+    - type: select
+      name: select
+      config:
+        source:
+          type: simple
+        required: true
+      label: URL/Document Selector
+      description: Select URL or document
   - type: field_group_list
     name: statistics
     label: Statistics
