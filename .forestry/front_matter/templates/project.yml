@@ -6,7 +6,7 @@ fields:
   name: title
   label: Title
 - type: text
-  name: url
+  name: slug
   label: URL
   description: E.g. 'valley-view' with create a URL of 'lricre.com/projects/valley-view'
   config:
