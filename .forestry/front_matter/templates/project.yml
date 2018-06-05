@@ -2,30 +2,30 @@
 hide_body: false
 is_partial: false
 fields:
-- type: field_group
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: url
+  label: URL
+  description: E.g. 'valley-view' with create a URL of 'lricre.com/projects/valley-view'
+  config:
+    required: true
+- type: text
+  name: location
+  label: Location
+  config:
+    required: true
+- type: file
+  name: featured_photo
+  label: Featured Photo
+- type: textarea
   name: overview
   label: Overview
-  fields:
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-  - type: text
-    name: location
-    label: Location
-    config:
-      required: true
-  - type: file
-    name: featured_photo
-    label: Featured Photo
-  - type: textarea
-    name: overview
-    label: Overview
-    description: A short sentence that summarizes key theme/important fact about the
-      project
-    config:
-      required: true
+  description: A short sentence that summarizes key theme/important fact about the
+    project
+  config:
+    required: true
 - type: field_group
   name: main
   label: Main
@@ -55,14 +55,10 @@ fields:
     - type: file
       name: document
       label: Document
-    - type: select
-      name: select
-      config:
-        source:
-          type: simple
-        required: true
-      label: URL/Document Selector
-      description: Select URL or document
+    - type: boolean
+      name: toggle
+      label: URL/Document Toggle
+      description: If you want to link a document instead of a URL turn toggle on
   - type: field_group_list
     name: statistics
     label: Statistics
