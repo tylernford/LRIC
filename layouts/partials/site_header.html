@@ -36,7 +36,7 @@
             </li>
             <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">
                 <a class="no-underline text-grey-dark hover:text-yellow
-                    {{if or (eq .Title "Projects") (eq .Title "Project")}}text-yellow{{ end }}"
+                    {{ if eq .Section "projects" }}text-yellow{{ end }}"
                 href="/projects">Projects</a>
             </li>
             <li class="px-2   xs:px-4   sm:px-8   md:pl-15 md:pr-0">

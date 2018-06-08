@@ -25825,12 +25825,6 @@ button.btn.\--large {
   margin-bottom: 1.25rem;
 }
 
-@media (min-width: 576px) {
-  .sm\:nested-mb-10 > p {
-    margin-bottom: 2.5rem;
-  }
-}
-
 /*   BIO SHOWN   */
 
 .css__bio-shown {
@@ -25929,12 +25923,11 @@ button.btn.\--large {
 }
 
 @media (min-width: 608px) {
-  .c38\:flex-no-wrap {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-
   .c38\:mb-0 {
     margin-bottom: 0;
+  }
+
+  .c38\:w-33 {
+    width: 33.3333%;
   }
 }

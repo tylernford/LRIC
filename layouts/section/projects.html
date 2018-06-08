@@ -1,43 +1,82 @@
 {{ define "main" }}
 
-    <main>
-        <!--   Section One   --> 
-        <section class="m-auto max-w-3xl pt-12 px-4   sm:px-6   md:px-8    pb-12   sm:pb-8   md:pb-14   xl:pb-29">
-            <!--   Headline   -->
-            <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">{{ .Title }}</h2>
-            <h3 class="heading-gradient   font-semibold leading-tight m-auto max-w-md mb-17 text-xl text-center text-yellow-dark uppercase   xs:text-2xl   sm:text-3xl   md:px-4 md:text-4xl   lg:px-0">Heading about retail in Texas and expertise</h3>
-            <!-- End Headline -->
+   <main>
+      <!--   Section One   --> 
+      <section class="m-auto max-w-3xl pt-12 px-4   sm:px-6   md:px-8    pb-12   sm:pb-8   md:pb-14   xl:pb-29">
+         <!--   Headline   -->
+         <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">{{ .Title }}</h2>
+         <h3 class="heading-gradient   font-semibold leading-tight m-auto max-w-md mb-17 text-xl text-center text-yellow-dark uppercase   xs:text-2xl   sm:text-3xl   md:px-4 md:text-4xl   lg:px-0">{{ .Params.heading }}</h3>
+         <!-- End Headline -->
 
             
-            <!--   Project Grid   -->
-            <div class="flex flex-wrap justify-center   sm:-mx-2   md:-mx-4">
+         <!--   Project Grid   -->
+         <div class="flex flex-wrap justify-center   sm:-mx-2   md:-mx-4">
                
-               {{ range .Data.Pages }}
-                  {{ if ne .Title "Projects" }}
-                     <!--   Project   -->
-                     <div class="mb-12   xs:w-4/5   sm:mb-16 sm:px-2 sm:w-1/2   md:px-4   pt-25   sm:pt-19 md:pt-25">
-                         <div class="border border-yellow-light text-center">
-                            <div class="m-auto mb-6 -mt-25 w-3/4   sm:w-3/5       sm:-mt-19   md:-mt-25">
-                                <figure class="img is3by2   sm:is4by3   md:is3by2">
-                                     <img class="block w-full   absolute pin-t pin-l" src="../../../assets/img/bg-scraper.jpg">
-                                </figure>
-                            </div>
+            {{ range .Data.Pages }}
+               {{ if ne .Title "Projects" }}
+                  <!--   Project   --
+                  <div class="mb-12   xs:w-4/5   sm:mb-16 sm:px-2 sm:w-1/2   md:px-4   pt-25   sm:pt-19   md:pt-25    border border-yellow">
+                     <div class="border border-yellow-light text-center">
+                        <div class="m-auto mb-6 s-mt-25 w-3/4   sm:w-3/5       fsm:-mt-19   dmd:-mt-25">
+                           <figure class="img is3by2   sm:is4by3   md:is3by2">
+                              <img class="block w-full   absolute pin-t pin-l" src="{{ .Params.featured_photo }}">
+                           </figure>
+                        </div>
 
-                            <div class="px-6   md:px-10   lg:px-6   xl:px-8">
-                                <h4 class="font-semibold leading-tight mb-1 text-base tracking-normal uppercase">{{ .Title }}</h4>
-                                <h5 class="font-normal font-serif leading-loose mb-2 text-sm text-yellow tracking-thin">Fort Worth, Texas</h5>
-                                <p class="font-serif leading-loose mb-13 text-grey text-sm tracking-thin">A short sentence that summarizes key theme/important fact about the project. If there's one takeaway-what is it?</p>
-                                <a class="btn --medium   bg-white hover:bg-yellow mb-7 text-yellow hover:text-white" href="{{ .URL }}">More Info</a>
-                            </div>
-                         </div>
+                        <div class="px-6   md:px-10   lg:px-6   xl:px-8">
+                           <h4 class="font-semibold leading-tight mb-1 text-base tracking-normal uppercase">{{ .Title }}</h4>
+                           <h5 class="font-normal font-serif leading-loose mb-2 text-sm text-yellow tracking-thin">{{ .Params.location }}</h5>
+                           <div class="font-serif leading-loose mb-13 nested-mb-5 text-grey text-sm tracking-thin">
+                              <p>{{ .Params.overview | markdownify }}</p>
+                           </div>
+                           <a class="btn --medium   bg-white hover:bg-yellow fmb-7 text-yellow hover:text-white" href="{{ .URL }}">More Info</a>
+                        </div>
                      </div>
-                     <!-- End Project -->
-                  {{ end }}
-               {{ end }}
+                  </div>
+                  <!-- End Project -->
+                     
+                     
+                  <div class="mb-12   xs:w-4/5   sm:mb-16 sm:px-2 sm:w-1/2   md:px-4   pt-25   sm:pt-19   md:pt-25">
+                     <div class="border border-yellow-light flex flex-col h-full text-center">
+                        <!--   Project Photo   -->
+                        <div class="m-auto mb-6 -mt-25 w-3/4   sm:-mt-19 sm:w-3/5   md:-mt-25">
+                           <figure class="img is3by2   sm:is4by3   md:is3by2">
+                              <img class="block w-full   absolute pin-t pin-l" src="{{ .Params.featured_photo }}">
+                           </figure>
+                        </div>
+                        <!-- End Project Photo -->
 
-            </div>
-            <!-- End Project Grid -->
-        </section>
-        <!-- End Section One -->
-    </main>
+                        <div class="flex flex-col h-full px-6   md:px-10   lg:px-6   xl:px-8">
+                           <div class="mb-auto">
+                              <!--   Project Title   -->
+                              <h4 class="font-semibold leading-tight mb-1 text-base tracking-normal uppercase">{{ .Title }}</h4>
+                              <!-- End Project Title -->
+                              
+                              <!--   Project Location   -->
+                              <h5 class="font-normal font-serif leading-loose mb-2 text-sm text-yellow tracking-thin">{{ .Params.location }}</h5>
+                              <!-- End Project Location -->
+                              
+                              <!--   Project Overview   -->
+                              <div class="font-serif leading-loose mb-13 nested-mb-5 text-grey text-sm tracking-thin">
+                                 <p>{{ .Params.overview | markdownify }}</p>
+                              </div>
+                              <!-- End Project Overview -->
+                           </div>
+                           
+                           <!--   More Info Button   -->
+                           <div>
+                              <a class="btn --medium   bg-white hover:bg-yellow mb-6 text-yellow hover:text-white" href="{{ .URL }}">More Info</a>
+                           </div>
+                           <!-- End More Info Button -->
+                        </div>
+                     </div>
+                  </div>
+               {{ end }}
+            {{ end }}
+
+         </div>
+         <!-- End Project Grid -->
+      </section>
+      <!-- End Section One -->
+   </main>
 {{ end }}
