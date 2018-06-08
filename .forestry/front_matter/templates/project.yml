@@ -60,10 +60,6 @@ fields:
     - type: file
       name: document
       label: Document
-    - type: boolean
-      name: toggle
-      label: URL/Document Toggle
-      description: If you want to link a document instead of a URL turn toggle on
   - type: field_group_list
     name: statistics
     label: Statistics
