@@ -60,24 +60,6 @@ a { transition: color 150ms ease-in-out, background 150ms ease-in-out }
 		@apply .h-10 .px-9 .text-1xs;
 		padding-top: 14.5px
 	}
-	&.--large {
-		@apply .h-10 .px-4 .text-1xs;
-		padding-top: 14.5px
-	}
-	@media (min-width: 768px) {
-		&.--large {
-			@apply .h-15 .px-4 .rounded-sm .text-xs;
-			padding-top: 23px
-		}
-	}
-}
-button.btn {
-	&.--medium {
-		padding-top: 1px
-	}
-	&.--large {
-		padding-top: 2px
-	}
 }
 
 

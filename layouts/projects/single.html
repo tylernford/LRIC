@@ -16,13 +16,13 @@
                 
             <!--   Section Three   -->
             <section class="m-auto max-w-xl mb-15   sm:px-4   lg:mb-16 lg:px-16" style="position: relative">
-               <div class="flex flex-col">
+
                   <figure class="img is3by2   sm:is2by1   mb-13">
                      <img class="block w-full   absolute pin-t pin-l" src="{{ .Params.main.photo }}">
                   </figure>
                         
                   <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">{{ .Params.main.heading }}</h2>
-                  <div class="font-serif leading-normal mb-4 nested-mb-5 text-base text-grey-dark   xl:text-lg">
+                  <div class="font-serif leading-normal mb-9 nested-mb-5 text-base text-grey-dark   xl:text-lg">
                      {{ .Params.main.body | markdownify }}
                   </div>
                   
@@ -30,32 +30,19 @@
 
                         
 
-                  <div class="flex flex-wrap justify-center -mx-2   md:-mx-3   lg:-mx-4">
-                     <div class="mb-4 px-2 w-full   c38:w-33   md:px-3   lg:px-4">
-                        <a class="btn --large   bg-yellow hover:bg-transparent border border-yellow text-white hover:text-yellow   w-full" href="">Leasing Package</a>
-                     </div>
-                     <div class="mb-4 px-2 w-full   c38:w-33   md:px-3   lg:px-4">
-                        <a class="btn --large   bg-yellow hover:bg-transparent border border-yellow text-white hover:text-yellow   w-full" href="">Site Plan</a>
-                     </div>
-                     <div class="mb-4 px-2 w-full   c38:w-33   md:px-3   lg:px-4">
-                        <a class="btn --large   bg-yellow hover:bg-transparent border border-yellow text-white hover:text-yellow   w-full" href="">Location</a>
-                     </div>
-                     
+                  <div class="flex flex-wrap justify-center -mx-2   md:-mx-3   lg:-mx-4">                  
                      {{ range .Params.main.project_links }}
                      
-                     <div class="mb-4 px-2 w-full   c38:w-33   md:px-3   lg:px-4">
-                        <a class="btn --large   bg-yellow hover:bg-transparent border border-yellow text-white hover:text-yellow   w-full" href="">
-                           {{ if .toggle }}
-                              {{ .url }}
-                           {{ else }}
-                              bye
-                           {{ end }}
+                        <div class="mb-4 px-2 w-full   c38:w-33   md:px-3   lg:px-4">
+                        <a class="bg-yellow hover:bg-transparent border border-yellow flex font-semibold h-10 items-center justify-center leading-none no-underline px-4 text-1xs text-center text-white hover:text-yellow tracking-thin uppercase w-full   md:h-15 md:px-4 md:rounded-sm md:text-xs" href="{{ if .url }}{{ .url }}{{ else }}{{ .document }}{{ end }}">
+                           <span>{{ .text }}</span>
                         </a>
                      </div>
                               
                      {{ end }}
                   </div>
-               </section>
+
+            </section>
                <!-- End Section Three -->
                 
                 

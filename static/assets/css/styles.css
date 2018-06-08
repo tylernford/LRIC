@@ -25794,33 +25794,6 @@ a {
   padding-top: 14.5px;
 }
 
-.btn.\--large {
-  height: 2.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: .75rem;
-  padding-top: 14.5px;
-}
-
-@media (min-width: 768px) {
-  .btn.\--large {
-    height: 3.75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: .125rem;
-    font-size: .8125rem;
-    padding-top: 23px;
-  }
-}
-
-button.btn.\--medium {
-  padding-top: 1px;
-}
-
-button.btn.\--large {
-  padding-top: 2px;
-}
-
 .nested-mb-5 > p {
   margin-bottom: 1.25rem;
 }
