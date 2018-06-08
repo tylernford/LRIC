@@ -56,7 +56,7 @@ fields:
       name: url
       label: URL
       config:
-        required: true
+        required: false
     - type: file
       name: document
       label: Document
