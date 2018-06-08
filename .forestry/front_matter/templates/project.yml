@@ -48,6 +48,11 @@ fields:
     label: Project Links
     fields:
     - type: text
+      name: text
+      label: Link Text
+      config:
+        required: true
+    - type: text
       name: url
       label: URL
       config:
