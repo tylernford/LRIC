@@ -4,7 +4,6 @@ slug: test_project
 location: Fort Worth, TX
 featured_photo: "/uploads/case_study__placeholder.jpg"
 overview: A short sentence that summarizes key theme/important fact about the project
-  whathwhat. a;gjkag aflkjhag algjhag algh
 main:
   photo: "/uploads/about__placeholder.jpg"
   heading: A heading

@@ -9,7 +9,7 @@ about:
     retail investment and development.
   statistics:
   - value: 2005
-    type: "*Founded*"
+    type: Founded
   - value: 140_+ yrs_
     type: Combined Partner Experience
   - value: 3
