@@ -61,7 +61,7 @@
         <section class="m-auto max-w-xl pb-14 px-4   sm:px-6   md:pb-20 md:px-20   lg:px-16   xl:pb-35">
             <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">{{ .Params.more_info.section_one.heading }}</h2>
             <div class="font-serif leading-normal mb-9 nested-mb-5 text-base text-grey-dark   xl:text-lg">
-              <p>{{ .Params.more_info.section_one.body }}<p>
+              {{ .Params.more_info.section_one.body | markdownify }}
             </div>
 
             <figure class="img is3by2   sm:is2by1   mb-13">
@@ -70,7 +70,7 @@
 
             <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">{{ .Params.more_info.section_two.heading }}</h2>
             <div class="font-serif leading-normal nested-mb-5 mb-9 text-base text-grey-dark   xl:text-lg">
-              <p>{{ .Params.more_info.section_two.body }}<p>
+              {{ .Params.more_info.section_two.body | markdownify }}
             </div>
         </section>
         <!-- End Section Three -->
