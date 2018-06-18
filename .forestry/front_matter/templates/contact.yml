@@ -77,4 +77,4 @@ fields:
     name: email
     label: Email
 data_files:
-- Contact_Info.yml
+- data/Contact_Info.yml

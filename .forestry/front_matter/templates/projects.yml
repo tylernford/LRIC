@@ -8,4 +8,4 @@ fields:
   config:
     required: true
 pages:
-- projects/_index.md
+- content/projects/_index.md

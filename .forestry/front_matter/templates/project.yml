@@ -77,4 +77,4 @@ fields:
       config:
         required: true
 pages:
-- projects/test_project.md
+- content/projects/test_project.md

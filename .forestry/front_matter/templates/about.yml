@@ -101,4 +101,4 @@ fields:
       config:
         required: true
 pages:
-- about.md
+- content/about.md

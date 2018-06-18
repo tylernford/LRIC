@@ -76,4 +76,4 @@ fields:
     label: Photo
     name: photo
 pages:
-- _index.md
+- content/_index.md
