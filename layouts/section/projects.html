@@ -7,7 +7,7 @@
          <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">{{ .Title }}</h2>
          {{ range .Data.Pages }}
                {{ if eq .Title "Projects" }}
-         {{ .Params.what }}
+         {{ .Params.heading }}
          {{ end }}
          {{ end }}
          <h3 class="heading-gradient   font-semibold leading-tight m-auto max-w-md mb-17 text-xl text-center text-yellow-dark uppercase   xs:text-2xl   sm:text-3xl   md:px-4 md:text-4xl   lg:px-0"></h3>
