@@ -39,5 +39,8 @@ featured:
     booming. Over the coming years some of the greatest opportunities will be in retail
     investment and development.
   photo: "/uploads/placeholder_2.jpg"
+  button:
+    text: Learn More
+    url: "/about"
 
 ---
