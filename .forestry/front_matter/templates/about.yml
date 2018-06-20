@@ -100,5 +100,8 @@ fields:
       label: Body
       config:
         required: true
+- type: boolean
+  name: show_statistics
+  label: Show Statistics
 pages:
 - content/about.md
