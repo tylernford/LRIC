@@ -62,6 +62,9 @@ fields:
   name: featured
   label: Featured
   fields:
+  - type: file
+    label: Photo
+    name: photo
   - type: text
     name: heading
     label: Heading
@@ -72,8 +75,19 @@ fields:
     label: Body
     config:
       required: true
-  - type: file
-    label: Photo
-    name: photo
+  - type: field_group
+    name: button
+    label: Button
+    fields:
+    - type: text
+      name: text
+      label: Button Text
+      config:
+        required: true
+    - type: text
+      name: url
+      label: URL
+      config:
+        required: true
 pages:
 - content/_index.md
