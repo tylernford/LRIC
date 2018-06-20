@@ -1,79 +1,103 @@
 {{ define "main" }}
 
-    <main>
+   <main>
         
-        <!--   Section One   --> 
-        <section class="m-auto max-w-3xl pt-12 px-4   sm:px-6   md:px-8">
-            <!--   Headline   -->
-            <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">About</h2>
-            <h3 class="heading-gradient   font-semibold leading-tight m-auto max-w-md mb-17 text-xl text-center text-yellow-dark uppercase   xs:text-2xl   sm:text-3xl   md:px-4 md:text-4xl   lg:px-0">{{ .Params.heading }}</h3>
-            <!-- End Headline -->
+      <!--   Section One   --> 
+      <section class="m-auto max-w-3xl pt-12 px-4   sm:px-6   md:px-8
+         {{ if .Params.show_statistics }} mb-0 {{ else }} mb-12   md:mb-23 {{ end }}">
+         
+         <!--   Headline   -->
+         <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">About</h2>
+         
+         <h3 class="heading-gradient   font-semibold leading-tight m-auto max-w-md mb-17 text-xl text-center text-yellow-dark uppercase   xs:text-2xl   sm:text-3xl   md:px-4 md:text-4xl   lg:px-0">{{ .Params.heading }}</h3>
+         <!-- End Headline -->
         
         
-            <!--   Text Left/Fancy Photo Right   -->
-            <div class="md:flex md:flex-row-reverse md:justify-between  mb-24   lg:mb-43">
-                <div class="border border-yellow-light mb-12 ml-3 self-start   sm:mb-0 sm:ml-35p sm:w-3/5   md:ml-0 md:w-2/5   lfg:w-1/2">
-                    <figure class="img is5by3   translate_-l-3_t-3 w-full   md:translate_-l-4_t-4   md:is520by460">
-                        <img class="block w-full   absolute pin-t pin-l" src="{{ .Params.what_we_do.photo }}">
-                    </figure>
-                </div>
+         <!--   Text Left/Fancy Photo Right   -->
+         <div class="md:flex md:flex-row-reverse md:justify-between  mb-24   lg:mb-43">
+            <div class="border border-yellow-light mb-12 ml-3 self-start   sm:mb-0 sm:ml-35p sm:w-3/5   md:ml-0 md:w-2/5   lfg:w-1/2">
+               <figure class="img is5by3   translate_-l-3_t-3 w-full   md:translate_-l-4_t-4   md:is520by460">
+                  <img class="block w-full   absolute pin-t pin-l" src="{{ .Params.what_we_do.photo }}">
+               </figure>
+            </div>
                 
-                <div class="sm:w-9/10 sm:m-auto   md:pl-4 md:pr-24 md:w-3/5   lg:pl-10 lfg:w-1/2   xl:pl-24">
-                    <h3 class="font-semibold leading-none mb-5 text-sm tracking-normal uppercase   sm:mb-10 sm:-mt-4 sm:pr-5 sm:w-1/3   md:mb-5 md:mt-8 md:w-full   lg:ie-mt-8 lg:-mt-19">What We Do</h3>
-                    <div class="font-serif leading-loose text-grey text-base   xl:text-lg">
-                      <p>{{ .Params.what_we_do.body | markdownify }}</p>
-                    </div>
-                </div>
+            <div class="sm:w-9/10 sm:m-auto   md:pl-4 md:pr-24 md:w-3/5   lg:pl-10 lfg:w-1/2   xl:pl-24">
+               <h3 class="font-semibold leading-none mb-5 text-sm tracking-normal uppercase   sm:mb-10 sm:-mt-4 sm:pr-5 sm:w-1/3   md:mb-5 md:mt-8 md:w-full   lg:ie-mt-8 lg:-mt-19">What We Do</h3>
+               
+               <div class="font-serif leading-loose text-grey text-base   xl:text-lg">
+                  <p>{{ .Params.what_we_do.body | markdownify }}</p>
+               </div>
             </div>
-            <!-- End Text Left/Fancy Photo Right -->
+         </div>
+         <!-- End Text Left/Fancy Photo Right -->
             
-            <!--   Team Member Grid   -->
-            <div class="flex flex-wrap justify-center mb-4 sm:-mx-2   md:-mx-4">
-              {{ range .Params.team_members }}
-                {{ partial "team_member_grid_item" . }}
-              {{ end }}
-            </div>
-            <!-- End Team Member Grid -->
-        </section>
-        <!-- End Section One -->
+         <!--   Team Member Grid   -->
+         <div class="flex flex-wrap justify-center mb-4 sm:-mx-2   md:-mx-4">
+            {{ range .Params.team_members }}
+               {{ partial "team_member_grid_item" . }}
+            {{ end }}
+         </div>
+         <!-- End Team Member Grid -->
+      </section>
+      <!-- End Section One -->
         
-        
-        <!--   Section Two   -->
-        <section class="bg-yellow-lightest mb-23">
-          <!--   Statistics Grid   -->
-          <div class="m-auto max-w-2xl">
-            <div class="flex flex-wrap items-start px-3 py-10   md:px-4 lg:py-15">
-              {{ range .Params.statistics }}
-                <p class="flex flex-col-reverse text-center px-4 py-4 w-full   sm:px-2 sm:py-4 sm:w-1/3   md:px-5   borderr">
-                    <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase
-                    sm:text-3xs   md:text-2xs">{{ .type }}</span>
-                    <span class="font-serif leading-tight mb-1 text-3xl text-yellow   xs:text-4xl   md:text-5xl   lg:text-6xl">{{ .value | markdownify }}</span>
-                </p>
-              {{ end }}                      
+      
+      {{ if .Params.show_statistics }}
+         <!--   Section Two   -->
+         <section class="mb-23" style="background-color:rgba(238,233,226,0.2);">
+            <!--   Statistics Grid   -->
+            <div class="m-auto max-w-2xl">
+               <div class="flex flex-wrap items-start px-3 py-10   md:px-4 lg:py-15">
+                  {{ range .Params.statistics }}
+                     <p class="flex flex-col-reverse text-center px-4 py-4 w-full   sm:px-2 sm:py-4 sm:w-1/3   md:px-5">
+                     <span class="font-semibold leading-normal text-grey-darkest text-2xs tracking-wide uppercase   sm:text-3xs   md:text-2xs">{{ .type }}</span>
+                     <span class="font-serif leading-tight mb-1 text-3xl text-yellow   xs:text-4xl   md:text-5xl   lg:text-6xl">{{ .value | markdownify }}</span>
+                     </p>
+                  {{ end }}                      
+               </div>
             </div>
-          </div>
-          <!-- End Statistics Grid -->
-        </section>
-        <!-- End Section Two -->
+            <!-- End Statistics Grid -->
+         </section>
+         <!-- End Section Two -->
+      {{ end }}
+        
+      <!--   Statistics Grid with Border   --
+      <section class="m-auto max-w-2xl px-4   sm:px-6   md:px-8">
+         <div class="border border-yellow-lighter mb-23 p-3   md:p-4">
+            <div class="bg-yellow-lightest border border-yellow flex flex-wrap items-start py-10   lg:py-13">
+
+               {{ range .Params.statistics }}
+                  <p class="flex flex-col-reverse px-5 py-4 text-center w-full   sm:py-6 sm:w-1/2   md:w-1/3">
+                     <span class="font-semibold leading-normal text-2xs text-grey-darkest tracking-wide uppercase">{{ .type }}</span>
+                     <span class="font-serif leading-tight mb-1 text-3xl text-yellow   sm:text-5xl   lg:text-6xl">{{ .value | markdownify }}</span>
+                  </p>
+               {{ end }}
+                
+            </div>
+         </div>
+      </section>
+      <!-- End Statistics Grid with Border-->
         
 
-        <!--   Section Three   -->
-        <section class="m-auto max-w-xl pb-14 px-4   sm:px-6   md:pb-20 md:px-20   lg:px-16   xl:pb-35">
-            <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">{{ .Params.more_info.section_one.heading }}</h2>
-            <div class="font-serif leading-normal mb-9 nested-mb-5 text-base text-grey-dark   xl:text-lg">
-              {{ .Params.more_info.section_one.body | markdownify }}
-            </div>
+      <!--   Section Three   -->
+      <section class="m-auto max-w-xl pb-14 px-4   sm:px-6   md:pb-20 md:px-20   lg:px-16   xl:pb-35">
+         <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">{{ .Params.more_info.section_one.heading }}</h2>
+         
+         <div class="font-serif leading-normal mb-9 nested-mb-5 text-base text-grey-dark   xl:text-lg">
+            {{ .Params.more_info.section_one.body | markdownify }}
+         </div>
 
-            <figure class="img is3by2   sm:is2by1   mb-13">
-                <img class="block w-full   absolute pin-t pin-l" src="{{ .Params.more_info.photo }}">
-            </figure>
+         <figure class="img is3by2   sm:is2by1   mb-13">
+            <img class="block w-full   absolute pin-t pin-l" src="{{ .Params.more_info.photo }}">
+         </figure>
 
-            <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">{{ .Params.more_info.section_two.heading }}</h2>
-            <div class="font-serif leading-normal nested-mb-5 mb-9 text-base text-grey-dark   xl:text-lg">
-              {{ .Params.more_info.section_two.body | markdownify }}
-            </div>
-        </section>
-        <!-- End Section Three -->
-    </main>
+         <h2 class="border-b border-yellow-light font-semibold leading-tight mb-8 pb-4 text-xl tracking-thin uppercase   xs:text-2xl   sm:text-3xl   xl:mb-10">{{ .Params.more_info.section_two.heading }}</h2>
+         
+         <div class="font-serif leading-normal nested-mb-5 mb-9 text-base text-grey-dark   xl:text-lg">
+            {{ .Params.more_info.section_two.body | markdownify }}
+         </div>
+      </section>
+      <!-- End Section Three -->
+   </main>
         
 {{ end }}
