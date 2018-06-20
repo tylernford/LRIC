@@ -59,8 +59,8 @@ fields:
       config:
         required: true
 - type: field_group
-  name: learn_more
-  label: Learn More
+  name: featured
+  label: Featured
   fields:
   - type: text
     name: heading
