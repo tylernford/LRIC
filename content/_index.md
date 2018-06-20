@@ -33,5 +33,11 @@ learn_more:
     booming. Over the coming years some of the greatest opportunities will be in retail
     investment and development.
   photo: "/uploads/placeholder_2.jpg"
+featured:
+  heading: Why Is Texas Our Target Market?
+  body: It’s population is growing by more than 1000 people per day. The economy is
+    booming. Over the coming years some of the greatest opportunities will be in retail
+    investment and development.
+  photo: "/uploads/placeholder_2.jpg"
 
 ---
