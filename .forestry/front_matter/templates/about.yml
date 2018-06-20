@@ -47,6 +47,9 @@ fields:
       required: false
   config:
     labelField: name
+- type: boolean
+  name: show_statistics
+  label: Show Statistics
 - type: field_group_list
   name: statistics
   label: Statistics
@@ -100,8 +103,5 @@ fields:
       label: Body
       config:
         required: true
-- type: boolean
-  name: show_statistics
-  label: Show Statistics
 pages:
 - content/about.md
