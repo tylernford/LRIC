@@ -1,5 +1,5 @@
 ---
-title: Test Project
+title: 01 - Test Project
 slug: test_project
 location: Fort Worth, TX
 featured_photo: "/uploads/case_study__placeholder.jpg"
