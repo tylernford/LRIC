@@ -4,7 +4,7 @@
       <!--   Section One   --> 
       <section class="m-auto max-w-3xl pt-12 px-4   sm:px-6   md:px-8    pb-12   sm:pb-8   md:pb-14   xl:pb-29">
          <!--   Headline   -->
-         <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">{{ .Title }}</h2>
+         <h2 class="font-semibold leading-tight mb-4 text-center text-sm tracking-normal uppercase">{{ .Params.project_title }}</h2>
          
          {{ range .Data.Pages }}
             {{ if eq .Title "Projects" }}
