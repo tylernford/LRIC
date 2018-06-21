@@ -83,5 +83,4 @@ fields:
       config:
         required: true
 pages:
-- content/projects/ggg.md
 - content/projects/test_project.md
