@@ -76,6 +76,6 @@ more_info:
       at pretium ante. Praesent vitae quam ipsum. Quisque rhoncus malesuada arcu,
       sit amet blandit nisi scelerisque sit amet.
   photo: "/uploads/about__placeholder.jpg"
-show_statistics: false
+show_statistics: true
 
 ---
