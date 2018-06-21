@@ -16,6 +16,11 @@ fields:
     label: Body
     config:
       required: true
+  - type: text
+    name: link_text
+    label: Link Text
+    config:
+      required: true
   - type: file
     label: Photo
     name: photo
