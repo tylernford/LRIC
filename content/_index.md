@@ -15,6 +15,7 @@ about:
   - value: 3
     type: Partners
   photo: "/uploads/placeholder_1.jpg"
+  link_text: Get to Know Uss
 capabilities:
   heading: Opportunity Rooted In Stability.
   capabilities:
