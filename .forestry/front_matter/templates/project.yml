@@ -83,4 +83,5 @@ fields:
       config:
         required: true
 pages:
+- content/projects/test_project_2.md
 - content/projects/test_project.md

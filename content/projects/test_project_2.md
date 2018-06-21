@@ -31,5 +31,6 @@ main:
     value: 42_mil_
   - type: Closed Real Estate Debt
     value: "$2_bil_"
+project_title: Test Project Two
 
 ---
